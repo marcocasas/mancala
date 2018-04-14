@@ -1,0 +1,7436 @@
+;; Tracing function MAXI-VAL.
+;; Tracing function MINI-VAL.
+1. Trace: (MAXI-VAL '(0 0 (4 4 4 4 4 4 0 4 4 4 4 4 4 0)) '-9999 '9999)
+NODO-MAXI-ANTES 
+(1 0 (4 4 4 4 4 0 1 5 5 5 4 4 4 0)) 
+2. Trace: (MINI-VAL '(1 0 (4 4 4 4 4 0 1 5 5 5 4 4 4 0)) '-9999 '9999)
+3. Trace: (MAXI-VAL '(2 0 (5 5 5 4 4 0 1 5 5 5 4 4 0 1)) '-9999 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 5 5 4 0 1 2 6 6 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 5 4 0 1 2 6 6 5 4 4 0 1)) '-9999 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 4 0 1 2 6 6 5 4 0 1 2)) '-9999 '9999)
+(4 0 (6 6 5 4 0 1 2 6 6 5 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 4 0 1 2 6 6 5 0 5 1 2)) '-9999 '0)
+(4 0 (6 5 5 4 0 1 2 6 6 5 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 4 0 1 2 6 6 0 5 5 1 2)) '-9999 '0)
+(4 0 (6 5 5 4 0 1 2 6 6 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 4 0 1 2 6 0 6 5 5 1 2)) '-9999 '0)
+(4 0 (6 5 5 4 0 1 2 6 0 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 1 2 0 7 6 5 5 1 2)) '-9999 '0)
+(4 0 (5 5 5 4 0 1 2 0 7 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 5 4 0 1 2 0 7 6 5 5 1 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 5 0 5 1 2 6 5 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 5 0 5 1 2 6 5 5 4 4 0 1)) '0 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 0 5 1 2 6 5 5 4 0 1 2)) '0 '9999)
+(4 0 (6 6 5 0 5 1 2 6 5 5 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 5 1 2 6 5 5 0 5 1 2)) '0 '9999)
+(4 0 (6 5 5 0 5 1 2 6 5 5 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 5 1 2 6 5 0 5 5 1 2)) '0 '9999)
+(4 0 (6 5 5 0 5 1 2 6 5 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 1 2 6 0 6 5 5 1 2)) '0 '9999)
+(4 0 (5 5 5 0 5 1 2 6 0 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 1 2 0 6 6 5 5 1 2)) '0 '9999)
+(4 0 (5 5 5 0 5 1 2 0 6 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 5 0 5 1 2 0 6 6 5 5 1 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 5 5 1 2 6 5 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 5 5 1 2 6 5 5 4 4 0 1)) '0 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 0 5 5 1 2 6 5 5 4 0 1 2)) '0 '9999)
+(4 0 (6 6 0 5 5 1 2 6 5 5 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 5 1 2 6 5 5 0 5 1 2)) '0 '9999)
+(4 0 (6 5 0 5 5 1 2 6 5 5 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 5 1 2 6 5 0 5 5 1 2)) '0 '9999)
+(4 0 (6 5 0 5 5 1 2 6 5 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 1 2 6 0 6 5 5 1 2)) '0 '9999)
+(4 0 (5 5 0 5 5 1 2 6 0 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 1 2 0 6 6 5 5 1 2)) '0 '9999)
+(4 0 (5 5 0 5 5 1 2 0 6 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 0 5 5 1 2 0 6 6 5 5 1 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 6 5 5 1 2 5 5 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 6 5 5 1 2 5 5 5 4 4 0 1)) '0 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 5 1 2 5 5 5 4 0 1 2)) '0 '9999)
+(4 0 (6 1 6 5 5 1 2 5 5 5 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 6 5 5 1 2 5 5 5 0 5 1 2)) '0 '9999)
+(4 0 (6 0 6 5 5 1 2 5 5 5 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 6 5 5 1 2 5 5 0 5 5 1 2)) '0 '9999)
+(4 0 (6 0 6 5 5 1 2 5 5 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 6 5 5 1 2 5 0 6 5 5 1 2)) '0 '9999)
+(4 0 (5 0 6 5 5 1 2 5 0 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 6 5 5 1 2 0 6 6 5 5 0 7)) '0 '9999)
+(4 0 (0 0 6 5 5 1 2 0 6 6 5 5 0 7)) 
+UTILIDAD 
+-5 
+5. Trace: MAXI-VAL ==> -5
+NIL 
+4. Trace: MINI-VAL ==> -5
+NODO-MAXI-DESPUES 
+(4 0 (0 0 6 5 5 1 2 0 6 6 5 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 6 6 5 5 0 7 0 5 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 6 6 5 5 0 7 0 5 5 4 4 0 1)) '0 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 7 6 5 5 0 7 0 5 5 4 0 1 2)) '0 '9999)
+(4 0 (1 7 6 5 5 0 7 0 5 5 4 0 1 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 7 0 5 5 0 5 1 2)) '0 '5)
+(4 0 (1 6 6 5 5 0 7 0 5 5 0 5 1 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 7 0 5 0 5 5 1 2)) '0 '5)
+(4 0 (1 6 6 5 5 0 7 0 5 0 5 5 1 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 5 5 0 7 0 0 6 5 5 1 2)) '0 '5)
+(4 0 (0 6 6 5 5 0 7 0 0 6 5 5 1 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+4. Trace: MINI-VAL ==> 5
+NODO-MAXI-DESPUES 
+(4 5 (0 6 6 5 5 0 7 0 0 6 5 5 1 2)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 5
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 5 4 4 4 0 1 5 5 5 4 0 5 1)) '-9999 '5)
+NODO-MAXI-ANTES 
+(3 0 (5 5 4 4 0 1 2 6 6 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 4 4 0 1 2 6 6 5 4 0 5 1)) '-9999 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 5 0 1 2 6 6 5 4 0 0 2)) '-9999 '5)
+(4 0 (6 6 5 5 0 1 2 6 6 5 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 4 0 1 2 6 6 5 0 1 6 2)) '-9999 '0)
+(4 0 (6 5 4 4 0 1 2 6 6 5 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 4 0 1 2 6 6 0 5 1 6 2)) '-9999 '0)
+(4 0 (6 5 4 4 0 1 2 6 6 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 4 0 1 2 6 0 6 5 1 6 2)) '-9999 '0)
+(4 0 (6 5 4 4 0 1 2 6 0 6 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 1 2 0 7 6 5 1 6 2)) '-9999 '0)
+(4 0 (5 5 4 4 0 1 2 0 7 6 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 4 4 0 1 2 0 7 6 5 1 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 4 0 5 1 2 6 5 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 4 0 5 1 2 6 5 5 4 0 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 1 5 1 2 6 5 5 4 0 0 2)) '0 '5)
+(4 0 (6 6 5 1 5 1 2 6 5 5 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 0 5 1 2 6 5 5 0 1 6 2)) '0 '5)
+(4 0 (6 5 4 0 5 1 2 6 5 5 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 0 5 1 2 6 5 0 5 1 6 2)) '0 '5)
+(4 0 (6 5 4 0 5 1 2 6 5 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 1 2 6 0 6 5 1 6 2)) '0 '5)
+(4 0 (5 5 4 0 5 1 2 6 0 6 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 1 2 0 6 6 5 1 6 2)) '0 '5)
+(4 0 (5 5 4 0 5 1 2 0 6 6 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 4 0 5 1 2 0 6 6 5 1 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 5 5 1 2 5 5 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 5 5 1 2 5 5 5 4 0 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 6 5 1 2 5 5 5 4 0 0 2)) '0 '5)
+(4 0 (6 6 1 6 5 1 2 5 5 5 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 5 1 2 5 5 5 0 1 6 2)) '0 '5)
+(4 0 (6 5 0 5 5 1 2 5 5 5 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 5 1 2 5 5 0 5 1 6 2)) '0 '5)
+(4 0 (6 5 0 5 5 1 2 5 5 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 1 2 5 0 6 5 1 6 2)) '0 '5)
+(4 0 (5 5 0 5 5 1 2 5 0 6 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 1 2 0 6 6 5 1 6 1)) '0 '5)
+(4 0 (5 5 0 5 5 1 2 0 6 6 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 0 5 5 1 2 0 6 6 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 5 5 1 2 5 5 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 5 5 1 2 5 5 5 4 0 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 6 5 1 2 5 5 5 4 0 0 2)) '0 '5)
+(4 0 (6 1 6 6 5 1 2 5 5 5 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 5 5 5 1 2 5 5 5 0 1 6 2)) '0 '5)
+(4 0 (6 0 5 5 5 1 2 5 5 5 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 5 5 5 1 2 5 5 0 5 1 6 2)) '0 '5)
+(4 0 (6 0 5 5 5 1 2 5 5 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 5 1 2 5 0 6 5 1 6 2)) '0 '5)
+(4 0 (5 0 5 5 5 1 2 5 0 6 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 5 1 2 0 6 6 5 1 6 1)) '0 '5)
+(4 0 (5 0 5 5 5 1 2 0 6 6 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 0 5 5 5 1 2 0 6 6 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 6 5 5 5 0 7 0 5 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 6 5 5 5 0 7 0 5 5 4 0 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (1 7 6 6 5 0 7 0 5 5 4 0 0 2)) '0 '5)
+(4 0 (1 7 6 6 5 0 7 0 5 5 4 0 0 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 7 0 5 5 0 1 6 2)) '0 '5)
+(4 0 (1 6 5 5 5 0 7 0 5 5 0 1 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 7 0 5 0 5 1 6 2)) '0 '5)
+(4 0 (1 6 5 5 5 0 7 0 5 0 5 1 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 5 5 0 7 0 0 6 5 1 6 2)) '0 '5)
+(4 0 (0 6 5 5 5 0 7 0 0 6 5 1 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+4. Trace: MINI-VAL ==> 5
+NODO-MAXI-DESPUES 
+(4 5 (0 6 5 5 5 0 7 0 0 6 5 1 6 2)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 5
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 4 4 4 4 0 1 5 5 5 0 5 5 1)) '-9999 '5)
+NODO-MAXI-ANTES 
+(3 0 (5 4 4 4 0 1 2 6 6 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 4 4 0 1 2 6 6 5 0 5 5 1)) '-9999 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 5 0 1 2 6 6 5 0 5 0 2)) '-9999 '5)
+(4 0 (6 5 5 5 0 1 2 6 6 5 0 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 4 0 1 2 6 6 5 0 0 6 2)) '-9999 '0)
+(4 0 (6 5 5 4 0 1 2 6 6 5 0 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 4 4 0 1 2 6 6 0 1 6 6 2)) '-9999 '0)
+(4 0 (6 4 4 4 0 1 2 6 6 0 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 4 4 0 1 2 6 0 6 1 6 6 2)) '-9999 '0)
+(4 0 (6 4 4 4 0 1 2 6 0 6 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 4 0 1 2 0 7 6 1 6 6 2)) '-9999 '0)
+(4 0 (5 4 4 4 0 1 2 0 7 6 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 4 4 0 1 2 0 7 6 1 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 4 0 5 1 2 6 5 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 4 0 5 1 2 6 5 5 0 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 1 5 1 2 6 5 5 0 5 0 2)) '0 '5)
+(4 0 (6 5 5 1 5 1 2 6 5 5 0 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 5 1 2 6 5 5 0 0 6 2)) '0 '5)
+(4 0 (6 5 5 0 5 1 2 6 5 5 0 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 4 0 5 1 2 6 5 0 1 6 6 2)) '0 '5)
+(4 0 (6 4 4 0 5 1 2 6 5 0 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 5 1 2 6 0 6 1 6 6 2)) '0 '5)
+(4 0 (5 4 4 0 5 1 2 6 0 6 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 5 1 2 0 6 6 1 6 6 2)) '0 '5)
+(4 0 (5 4 4 0 5 1 2 0 6 6 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 4 0 5 1 2 0 6 6 1 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 0 5 5 1 2 5 5 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 0 5 5 1 2 5 5 5 0 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 6 5 1 2 5 5 5 0 5 0 2)) '0 '5)
+(4 0 (6 5 1 6 5 1 2 5 5 5 0 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 5 5 1 2 5 5 5 0 0 6 2)) '0 '5)
+(4 0 (6 5 1 5 5 1 2 5 5 5 0 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 0 5 5 1 2 5 5 0 1 6 6 2)) '0 '5)
+(4 0 (6 4 0 5 5 1 2 5 5 0 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 5 1 2 5 0 6 1 6 6 2)) '0 '5)
+(4 0 (5 4 0 5 5 1 2 5 0 6 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 5 1 2 0 6 6 1 6 6 1)) '0 '5)
+(4 0 (5 4 0 5 5 1 2 0 6 6 1 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 0 5 5 1 2 0 6 6 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 5 5 0 7 0 5 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 5 5 0 7 0 5 5 0 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 6 5 0 7 0 5 5 0 5 0 2)) '0 '5)
+(4 0 (6 1 6 6 5 0 7 0 5 5 0 5 0 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 5 0 7 0 5 5 0 0 6 2)) '0 '5)
+(4 0 (6 1 6 5 5 0 7 0 5 5 0 0 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 5 5 5 0 7 0 5 0 1 6 6 2)) '0 '5)
+(4 0 (6 0 5 5 5 0 7 0 5 0 1 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 5 0 7 0 0 6 1 6 6 2)) '0 '5)
+(4 0 (5 0 5 5 5 0 7 0 0 6 1 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+4. Trace: MINI-VAL ==> 5
+NODO-MAXI-DESPUES 
+(4 5 (5 0 5 5 5 0 7 0 0 6 1 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 5 0 7 0 5 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 5 0 7 0 5 5 0 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 5 0 7 0 5 5 0 5 0 2)) '0 '5)
+(4 0 (1 6 6 6 5 0 7 0 5 5 0 5 0 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 7 0 5 5 0 0 6 2)) '0 '5)
+(4 0 (1 6 6 5 5 0 7 0 5 5 0 0 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 5 0 7 0 5 0 1 6 6 2)) '0 '5)
+(4 0 (1 5 5 5 5 0 7 0 5 0 1 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 5 0 7 0 0 6 1 6 6 2)) '0 '5)
+(4 0 (0 5 5 5 5 0 7 0 0 6 1 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+4. Trace: MINI-VAL ==> 5
+NODO-MAXI-DESPUES 
+(4 5 (0 5 5 5 5 0 7 0 0 6 1 6 6 2)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 5
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 4 4 4 4 0 1 5 5 0 5 5 5 1)) '-9999 '5)
+NODO-MAXI-ANTES 
+(3 0 (5 4 4 4 0 1 2 6 6 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 4 4 0 1 2 6 6 0 5 5 5 1)) '-9999 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 5 0 1 2 6 6 0 5 5 0 2)) '-9999 '5)
+(4 0 (6 5 5 5 0 1 2 6 6 0 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 4 0 1 2 6 6 0 5 0 6 2)) '-9999 '0)
+(4 0 (6 5 5 4 0 1 2 6 6 0 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 4 0 1 2 6 6 0 0 6 6 2)) '-9999 '0)
+(4 0 (6 5 4 4 0 1 2 6 6 0 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 4 4 0 1 2 6 0 1 6 6 6 2)) '-9999 '0)
+(4 0 (6 4 4 4 0 1 2 6 0 1 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 4 0 1 2 0 7 1 6 6 6 2)) '-9999 '0)
+(4 0 (5 4 4 4 0 1 2 0 7 1 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 4 4 0 1 2 0 7 1 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 4 0 5 1 2 6 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 4 0 5 1 2 6 5 0 5 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 1 5 1 2 6 5 0 5 5 0 2)) '0 '5)
+(4 0 (6 5 5 1 5 1 2 6 5 0 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 5 1 2 6 5 0 5 0 6 2)) '0 '5)
+(4 0 (6 5 5 0 5 1 2 6 5 0 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 0 5 1 2 6 5 0 0 6 6 2)) '0 '5)
+(4 0 (6 5 4 0 5 1 2 6 5 0 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 5 1 2 6 0 1 6 6 6 2)) '0 '5)
+(4 0 (5 4 4 0 5 1 2 6 0 1 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 5 1 2 0 6 1 6 6 6 2)) '0 '5)
+(4 0 (5 4 4 0 5 1 2 0 6 1 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 4 0 5 1 2 0 6 1 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 0 5 5 1 2 5 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 0 5 5 1 2 5 5 0 5 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 6 5 1 2 5 5 0 5 5 0 2)) '0 '5)
+(4 0 (6 5 1 6 5 1 2 5 5 0 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 5 5 1 2 5 5 0 5 0 6 2)) '0 '5)
+(4 0 (6 5 1 5 5 1 2 5 5 0 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 5 1 2 5 5 0 0 6 6 2)) '0 '5)
+(4 0 (6 5 0 5 5 1 2 5 5 0 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 5 1 2 5 0 1 6 6 6 2)) '0 '5)
+(4 0 (5 4 0 5 5 1 2 5 0 1 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 5 1 2 0 6 1 6 6 6 1)) '0 '5)
+(4 0 (5 4 0 5 5 1 2 0 6 1 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 0 5 5 1 2 0 6 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 5 5 0 7 0 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 5 5 0 7 0 5 0 5 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 6 5 0 7 0 5 0 5 5 0 2)) '0 '5)
+(4 0 (6 1 6 6 5 0 7 0 5 0 5 5 0 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 5 0 7 0 5 0 5 0 6 2)) '0 '5)
+(4 0 (6 1 6 5 5 0 7 0 5 0 5 0 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 5 5 5 0 7 0 5 0 0 6 6 2)) '0 '5)
+(4 0 (6 1 5 5 5 0 7 0 5 0 0 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 5 0 7 0 0 1 6 6 6 2)) '0 '5)
+(4 0 (5 0 5 5 5 0 7 0 0 1 6 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+4. Trace: MINI-VAL ==> 5
+NODO-MAXI-DESPUES 
+(4 5 (5 0 5 5 5 0 7 0 0 1 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 5 0 7 0 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 5 0 7 0 5 0 5 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 5 0 7 0 5 0 5 5 0 2)) '0 '5)
+(4 0 (1 6 6 6 5 0 7 0 5 0 5 5 0 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 7 0 5 0 5 0 6 2)) '0 '5)
+(4 0 (1 6 6 5 5 0 7 0 5 0 5 0 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 7 0 5 0 0 6 6 2)) '0 '5)
+(4 0 (1 6 5 5 5 0 7 0 5 0 0 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 5 0 7 0 0 1 6 6 6 2)) '0 '5)
+(4 0 (0 5 5 5 5 0 7 0 0 1 6 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+4. Trace: MINI-VAL ==> 5
+NODO-MAXI-DESPUES 
+(4 5 (0 5 5 5 5 0 7 0 0 1 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 5
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 4 4 4 0 1 5 0 6 5 5 5 1)) '-9999 '5)
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 4 0 1 2 6 1 6 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 4 0 1 2 6 1 6 5 5 5 1)) '-9999 '5)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 5 0 1 2 6 1 6 5 5 0 2)) '-9999 '5)
+(4 0 (5 5 5 5 0 1 2 6 1 6 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 1 2 6 1 6 5 0 6 2)) '-9999 '0)
+(4 0 (5 5 5 4 0 1 2 6 1 6 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 1 2 6 1 6 0 6 6 2)) '-9999 '0)
+(4 0 (5 5 4 4 0 1 2 6 1 6 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 1 2 6 1 0 6 6 6 2)) '-9999 '0)
+(4 0 (5 5 4 4 0 1 2 6 1 0 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 4 0 1 2 6 0 7 5 5 5 1)) '-9999 '0)
+(4 0 (4 4 4 4 0 1 2 6 0 7 5 5 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 4 0 1 2 0 2 7 6 6 6 2)) '-9999 '0)
+(4 0 (4 4 4 4 0 1 2 0 2 7 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 4 4 0 1 2 0 2 7 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 5 1 2 6 0 6 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 5 1 2 6 0 6 5 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 5 1 2 6 0 6 5 5 0 2)) '0 '5)
+(4 0 (5 5 5 1 5 1 2 6 0 6 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 1 2 6 0 6 5 0 6 2)) '0 '5)
+(4 0 (5 5 5 0 5 1 2 6 0 6 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 1 2 6 0 6 0 6 6 2)) '0 '5)
+(4 0 (5 5 4 0 5 1 2 6 0 6 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 1 2 6 0 0 6 6 6 2)) '0 '5)
+(4 0 (5 5 4 0 5 1 2 6 0 0 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 5 1 2 0 1 7 6 6 6 2)) '0 '5)
+(4 0 (4 4 4 0 5 1 2 0 1 7 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 4 0 5 1 2 0 1 7 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 5 1 2 5 0 6 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 5 1 2 5 0 6 5 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 6 5 1 2 5 0 6 5 5 0 2)) '0 '5)
+(4 0 (5 5 1 6 5 1 2 5 0 6 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 1 2 5 0 6 5 0 6 2)) '0 '5)
+(4 0 (5 5 1 5 5 1 2 5 0 6 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 1 2 5 0 6 0 6 6 2)) '0 '5)
+(4 0 (5 5 0 5 5 1 2 5 0 6 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 1 2 5 0 0 6 6 6 2)) '0 '5)
+(4 0 (5 5 0 5 5 1 2 5 0 0 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 5 1 2 0 1 7 6 6 6 1)) '0 '5)
+(4 0 (4 4 0 5 5 1 2 0 1 7 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 0 5 5 1 2 0 1 7 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 5 0 7 0 0 6 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 5 0 7 0 0 6 5 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 6 5 0 7 0 0 6 5 5 0 2)) '0 '5)
+(4 0 (5 1 6 6 5 0 7 0 0 6 5 5 0 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 7 0 0 6 5 0 6 2)) '0 '5)
+(4 0 (5 1 6 5 5 0 7 0 0 6 5 0 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 5 0 7 0 0 6 0 6 6 2)) '0 '5)
+(4 0 (5 1 5 5 5 0 7 0 0 6 0 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 5 0 7 0 0 0 6 6 6 2)) '0 '5)
+(4 0 (5 1 5 5 5 0 7 0 0 0 6 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+4. Trace: MINI-VAL ==> 5
+NODO-MAXI-DESPUES 
+(4 5 (5 1 5 5 5 0 7 0 0 0 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 5 0 1 5 0 6 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 5 0 1 5 0 6 5 5 5 1)) '0 '5)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 5 0 1 5 0 6 5 5 0 2)) '0 '5)
+(4 0 (1 6 6 6 5 0 1 5 0 6 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 1 5 0 6 5 0 6 2)) '0 '5)
+(4 0 (1 6 6 5 5 0 1 5 0 6 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 5 0 6 0 6 6 2)) '0 '5)
+(4 0 (1 6 5 5 5 0 1 5 0 6 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 5 0 0 6 6 6 2)) '0 '5)
+(4 0 (1 6 5 5 5 0 1 5 0 0 6 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 5 0 1 0 1 7 6 6 6 1)) '0 '5)
+(4 0 (0 5 5 5 5 0 1 0 1 7 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 5 (0 5 5 5 5 0 1 0 1 7 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 5
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 4 4 4 0 1 0 6 6 5 5 5 0)) '-9999 '5)
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 4 0 1 2 1 7 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 4 0 1 2 1 7 6 5 5 5 0)) '-9999 '5)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 5 0 1 2 1 7 6 5 5 0 1)) '-9999 '5)
+(4 0 (5 5 5 5 0 1 2 1 7 6 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 1 2 1 7 6 5 0 6 1)) '-9999 '1)
+(4 0 (5 5 5 4 0 1 2 1 7 6 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 1 2 1 7 6 0 6 6 1)) '-9999 '1)
+(4 0 (5 5 4 4 0 1 2 1 7 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 1 2 1 7 0 6 6 6 1)) '-9999 '1)
+(4 0 (5 5 4 4 0 1 2 1 7 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 1 2 1 0 7 6 6 6 1)) '-9999 '1)
+(4 0 (5 5 4 4 0 1 2 1 0 7 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 4 0 1 2 0 8 6 5 5 5 0)) '-9999 '1)
+(4 0 (4 4 4 4 0 1 2 0 8 6 5 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 4 4 0 1 2 0 8 6 5 5 5 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 5 1 2 1 6 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 5 1 2 1 6 6 5 5 5 0)) '1 '5)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 5 1 2 1 6 6 5 5 0 1)) '1 '5)
+(4 0 (5 5 5 1 5 1 2 1 6 6 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 1 2 1 6 6 5 0 6 1)) '1 '5)
+(4 0 (5 5 5 0 5 1 2 1 6 6 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 1 2 1 6 6 0 6 6 1)) '1 '5)
+(4 0 (5 5 4 0 5 1 2 1 6 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 1 2 1 6 0 6 6 6 1)) '1 '5)
+(4 0 (5 5 4 0 5 1 2 1 6 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 5 1 2 1 0 7 6 6 6 1)) '1 '5)
+(4 0 (5 4 4 0 5 1 2 1 0 7 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 5 1 2 0 7 6 5 5 5 0)) '1 '5)
+(4 0 (4 4 4 0 5 1 2 0 7 6 5 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 4 0 5 1 2 0 7 6 5 5 5 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 5 1 2 0 6 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 5 1 2 0 6 6 5 5 5 0)) '1 '5)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 6 5 1 2 0 6 6 5 5 0 1)) '1 '5)
+(4 0 (5 5 1 6 5 1 2 0 6 6 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 1 2 0 6 6 5 0 6 1)) '1 '5)
+(4 0 (5 5 1 5 5 1 2 0 6 6 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 1 2 0 6 6 0 6 6 1)) '1 '5)
+(4 0 (5 5 0 5 5 1 2 0 6 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 1 2 0 6 0 6 6 6 1)) '1 '5)
+(4 0 (5 5 0 5 5 1 2 0 6 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 5 1 2 0 0 7 6 6 6 1)) '1 '5)
+(4 0 (5 4 0 5 5 1 2 0 0 7 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (5 4 0 5 5 1 2 0 0 7 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 5 0 2 0 6 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 5 0 2 0 6 6 5 5 5 0)) '1 '5)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 6 5 0 2 0 6 6 5 5 0 1)) '1 '5)
+(4 0 (5 1 6 6 5 0 2 0 6 6 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 2 0 6 6 5 0 6 1)) '1 '5)
+(4 0 (5 1 6 5 5 0 2 0 6 6 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 5 0 2 0 6 6 0 6 6 1)) '1 '5)
+(4 0 (5 1 5 5 5 0 2 0 6 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 5 0 2 0 6 0 6 6 6 1)) '1 '5)
+(4 0 (5 1 5 5 5 0 2 0 6 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 5 0 2 0 0 7 6 6 6 1)) '1 '5)
+(4 0 (5 0 5 5 5 0 2 0 0 7 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (5 0 5 5 5 0 2 0 0 7 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 5 0 1 0 6 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 5 0 1 0 6 6 5 5 5 0)) '1 '5)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 5 0 1 0 6 6 5 5 0 1)) '1 '5)
+(4 0 (1 6 6 6 5 0 1 0 6 6 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 1 0 6 6 5 0 6 1)) '1 '5)
+(4 0 (1 6 6 5 5 0 1 0 6 6 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 0 6 6 0 6 6 1)) '1 '5)
+(4 0 (1 6 5 5 5 0 1 0 6 6 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 0 6 0 6 6 6 1)) '1 '5)
+(4 0 (1 6 5 5 5 0 1 0 6 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 5 0 1 0 0 7 6 6 6 1)) '1 '5)
+(4 0 (1 5 5 5 5 0 1 0 0 7 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (1 5 5 5 5 0 1 0 0 7 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 1
+NIL 
+2. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (1 5 5 5 5 0 1 0 0 7 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(1 0 (4 4 4 4 0 5 1 5 5 4 4 4 4 0)) 
+2. Trace: (MINI-VAL '(1 0 (4 4 4 4 0 5 1 5 5 4 4 4 4 0)) '1 '9999)
+3. Trace: (MAXI-VAL '(2 0 (5 5 5 4 0 5 1 5 5 4 4 4 0 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 5 5 4 0 0 2 6 6 5 5 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 5 4 0 0 2 6 6 5 5 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 4 0 0 2 6 6 5 5 0 1 2)) '1 '9999)
+(4 0 (6 6 5 4 0 0 2 6 6 5 5 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 4 0 0 2 6 6 5 0 5 1 2)) '1 '9999)
+(4 0 (6 6 5 4 0 0 2 6 6 5 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 4 0 0 2 6 6 0 6 5 1 2)) '1 '9999)
+(4 0 (6 5 5 4 0 0 2 6 6 0 6 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 4 0 0 2 6 0 6 6 5 1 2)) '1 '9999)
+(4 0 (6 5 5 4 0 0 2 6 0 6 6 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 0 2 0 7 6 6 5 1 2)) '1 '9999)
+(4 0 (5 5 5 4 0 0 2 0 7 6 6 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 5 4 0 0 2 0 7 6 6 5 1 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 5 0 1 6 2 6 5 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 5 0 1 6 2 6 5 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 0 1 6 2 6 5 4 4 0 1 2)) '1 '9999)
+(4 0 (6 6 5 0 1 6 2 6 5 4 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 1 6 2 6 5 4 0 5 1 2)) '1 '9999)
+(4 0 (6 5 5 0 1 6 2 6 5 4 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 1 6 2 6 5 0 5 5 1 2)) '1 '9999)
+(4 0 (5 5 5 0 1 6 2 6 5 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 1 6 2 6 0 5 5 5 1 2)) '1 '9999)
+(4 0 (5 5 5 0 1 6 2 6 0 5 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 1 6 2 0 6 5 5 5 1 2)) '1 '9999)
+(4 0 (5 5 5 0 1 6 2 0 6 5 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 5 0 1 6 2 0 6 5 5 5 1 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 5 1 6 2 6 5 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 5 1 6 2 6 5 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 0 5 1 6 2 6 5 4 4 0 1 2)) '1 '9999)
+(4 0 (6 6 0 5 1 6 2 6 5 4 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 1 6 2 6 5 4 0 5 1 2)) '1 '9999)
+(4 0 (6 5 0 5 1 6 2 6 5 4 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 1 6 2 6 5 0 5 5 1 2)) '1 '9999)
+(4 0 (5 5 0 5 1 6 2 6 5 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 1 6 2 6 0 5 5 5 1 2)) '1 '9999)
+(4 0 (5 5 0 5 1 6 2 6 0 5 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 1 6 2 0 6 5 5 5 1 2)) '1 '9999)
+(4 0 (5 5 0 5 1 6 2 0 6 5 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 0 5 1 6 2 0 6 5 5 5 1 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 6 5 1 6 2 5 5 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 6 5 1 6 2 5 5 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 1 6 2 5 5 4 4 0 1 2)) '1 '9999)
+(4 0 (6 1 6 5 1 6 2 5 5 4 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 6 5 1 6 2 5 5 4 0 5 1 2)) '1 '9999)
+(4 0 (6 0 6 5 1 6 2 5 5 4 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 6 5 1 6 2 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (5 0 6 5 1 6 2 5 5 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 6 5 1 6 2 5 0 5 5 5 1 2)) '1 '9999)
+(4 0 (5 0 6 5 1 6 2 5 0 5 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 6 5 1 6 2 0 6 5 5 5 0 7)) '1 '9999)
+(4 0 (0 0 6 5 1 6 2 0 6 5 5 5 0 7)) 
+UTILIDAD 
+-5 
+5. Trace: MAXI-VAL ==> -5
+NIL 
+4. Trace: MINI-VAL ==> -5
+NODO-MAXI-DESPUES 
+(4 0 (0 0 6 5 1 6 2 0 6 5 5 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 6 6 5 1 6 1 5 5 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 6 6 5 1 6 1 5 5 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 7 6 5 1 6 1 5 5 4 4 0 1 2)) '1 '9999)
+(4 0 (1 7 6 5 1 6 1 5 5 4 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 1 6 1 5 5 4 0 5 1 2)) '1 '9999)
+(4 0 (1 6 6 5 1 6 1 5 5 4 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 5 1 6 1 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (0 6 6 5 1 6 1 5 5 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 5 1 6 1 5 0 5 5 5 1 2)) '1 '9999)
+(4 0 (0 6 6 5 1 6 1 5 0 5 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 5 1 6 1 0 6 5 5 5 0 2)) '1 '9999)
+(4 0 (0 6 6 5 1 6 1 0 6 5 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 6 6 5 1 6 1 0 6 5 5 5 0 2)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 5 4 4 0 5 1 5 5 4 4 0 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 5 4 4 0 0 2 6 6 5 5 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 4 4 0 0 2 6 6 5 5 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 5 0 0 2 6 6 5 5 0 0 2)) '1 '9999)
+(4 0 (6 6 5 5 0 0 2 6 6 5 5 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 6 4 4 0 0 2 6 6 5 0 1 6 2)) '1 '9999)
+(4 0 (6 6 4 4 0 0 2 6 6 5 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 4 0 0 2 6 6 0 6 1 6 2)) '1 '9999)
+(4 0 (6 5 4 4 0 0 2 6 6 0 6 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 4 0 0 2 6 0 6 6 1 6 2)) '1 '9999)
+(4 0 (6 5 4 4 0 0 2 6 0 6 6 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 0 2 0 7 6 6 1 6 2)) '1 '9999)
+(4 0 (5 5 4 4 0 0 2 0 7 6 6 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 4 4 0 0 2 0 7 6 6 1 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 4 0 1 6 2 6 5 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 4 0 1 6 2 6 5 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 1 1 6 2 6 5 4 4 0 0 2)) '1 '9999)
+(4 0 (6 6 5 1 1 6 2 6 5 4 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 0 1 6 2 6 5 4 0 1 6 2)) '1 '9999)
+(4 0 (6 5 4 0 1 6 2 6 5 4 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 1 6 2 6 5 0 5 1 6 2)) '1 '9999)
+(4 0 (5 5 4 0 1 6 2 6 5 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 1 6 2 6 0 5 5 1 6 2)) '1 '9999)
+(4 0 (5 5 4 0 1 6 2 6 0 5 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 1 6 2 0 6 5 5 1 6 2)) '1 '9999)
+(4 0 (5 5 4 0 1 6 2 0 6 5 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 4 0 1 6 2 0 6 5 5 1 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 5 1 6 2 5 5 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 5 1 6 2 5 5 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 6 1 6 2 5 5 4 4 0 0 2)) '1 '9999)
+(4 0 (6 6 1 6 1 6 2 5 5 4 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 1 6 2 5 5 4 0 1 6 2)) '1 '9999)
+(4 0 (6 5 0 5 1 6 2 5 5 4 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 1 6 2 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (5 5 0 5 1 6 2 5 5 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 1 6 2 5 0 5 5 1 6 2)) '1 '9999)
+(4 0 (5 5 0 5 1 6 2 5 0 5 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 1 6 2 0 6 5 5 1 6 1)) '1 '9999)
+(4 0 (5 5 0 5 1 6 2 0 6 5 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 0 5 1 6 2 0 6 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 5 1 6 2 5 5 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 5 1 6 2 5 5 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 6 1 6 2 5 5 4 4 0 0 2)) '1 '9999)
+(4 0 (6 1 6 6 1 6 2 5 5 4 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 5 5 1 6 2 5 5 4 0 1 6 2)) '1 '9999)
+(4 0 (6 0 5 5 1 6 2 5 5 4 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 1 6 2 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (5 0 5 5 1 6 2 5 5 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 1 6 2 5 0 5 5 1 6 2)) '1 '9999)
+(4 0 (5 0 5 5 1 6 2 5 0 5 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 1 6 2 0 6 5 5 1 6 1)) '1 '9999)
+(4 0 (5 0 5 5 1 6 2 0 6 5 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 0 5 5 1 6 2 0 6 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 6 5 5 1 6 1 5 5 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 6 5 5 1 6 1 5 5 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 7 6 6 1 6 1 5 5 4 4 0 0 2)) '1 '9999)
+(4 0 (1 7 6 6 1 6 1 5 5 4 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 1 6 1 5 5 4 0 1 6 2)) '1 '9999)
+(4 0 (1 6 5 5 1 6 1 5 5 4 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 5 1 6 1 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (0 6 5 5 1 6 1 5 5 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 5 1 6 1 5 0 5 5 1 6 2)) '1 '9999)
+(4 0 (0 6 5 5 1 6 1 5 0 5 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 5 1 6 1 0 6 5 5 1 6 1)) '1 '9999)
+(4 0 (0 6 5 5 1 6 1 0 6 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 6 5 5 1 6 1 0 6 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 4 4 4 0 5 1 5 5 4 0 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 4 4 4 0 0 2 6 6 5 1 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 4 4 0 0 2 6 6 5 1 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 5 0 0 2 6 6 5 1 5 0 2)) '1 '9999)
+(4 0 (6 5 5 5 0 0 2 6 6 5 1 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 4 0 0 2 6 6 5 1 0 6 2)) '1 '9999)
+(4 0 (6 5 5 4 0 0 2 6 6 5 1 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 4 0 0 2 6 6 5 0 6 5 1)) '1 '9999)
+(4 0 (5 4 4 4 0 0 2 6 6 5 0 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 4 4 0 0 2 6 6 0 2 6 6 2)) '1 '9999)
+(4 0 (6 4 4 4 0 0 2 6 6 0 2 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 4 4 0 0 2 6 0 6 2 6 6 2)) '1 '9999)
+(4 0 (6 4 4 4 0 0 2 6 0 6 2 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 4 0 0 2 0 7 6 2 6 6 2)) '1 '9999)
+(4 0 (5 4 4 4 0 0 2 0 7 6 2 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 4 4 0 0 2 0 7 6 2 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 4 0 1 6 2 6 5 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 4 0 1 6 2 6 5 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 1 1 6 2 6 5 4 0 5 0 2)) '1 '9999)
+(4 0 (6 5 5 1 1 6 2 6 5 4 0 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 1 6 2 6 5 4 0 0 6 2)) '1 '9999)
+(4 0 (6 5 5 0 1 6 2 6 5 4 0 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 1 6 2 6 5 0 1 6 6 2)) '1 '9999)
+(4 0 (5 4 4 0 1 6 2 6 5 0 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 1 6 2 6 0 5 1 6 6 2)) '1 '9999)
+(4 0 (5 4 4 0 1 6 2 6 0 5 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 1 6 2 0 6 5 1 6 6 2)) '1 '9999)
+(4 0 (5 4 4 0 1 6 2 0 6 5 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 4 0 1 6 2 0 6 5 1 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 0 5 1 6 2 5 5 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 0 5 1 6 2 5 5 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 6 1 6 2 5 5 4 0 5 0 2)) '1 '9999)
+(4 0 (6 5 1 6 1 6 2 5 5 4 0 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 5 1 6 2 5 5 4 0 0 6 2)) '1 '9999)
+(4 0 (6 5 1 5 1 6 2 5 5 4 0 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 1 6 2 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (5 4 0 5 1 6 2 5 5 0 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 1 6 2 5 0 5 1 6 6 2)) '1 '9999)
+(4 0 (5 4 0 5 1 6 2 5 0 5 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 1 6 2 0 6 5 1 6 6 1)) '1 '9999)
+(4 0 (5 4 0 5 1 6 2 0 6 5 1 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 0 5 1 6 2 0 6 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 5 1 6 1 5 5 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 5 1 6 1 5 5 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 6 1 6 1 5 5 4 0 5 0 2)) '1 '9999)
+(4 0 (6 1 6 6 1 6 1 5 5 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 1 6 1 5 5 4 0 0 6 2)) '1 '9999)
+(4 0 (6 1 6 5 1 6 1 5 5 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 1 6 1 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (5 0 5 5 1 6 1 5 5 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 1 6 1 5 0 5 1 6 6 2)) '1 '9999)
+(4 0 (5 0 5 5 1 6 1 5 0 5 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 1 6 1 0 6 5 1 6 6 1)) '1 '9999)
+(4 0 (5 0 5 5 1 6 1 0 6 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (5 0 5 5 1 6 1 0 6 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 1 6 1 5 5 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 1 6 1 5 5 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 1 6 1 5 5 4 0 5 0 2)) '1 '9999)
+(4 0 (1 6 6 6 1 6 1 5 5 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 1 6 1 5 5 4 0 0 6 2)) '1 '9999)
+(4 0 (1 6 6 5 1 6 1 5 5 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 1 6 1 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (0 5 5 5 1 6 1 5 5 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 1 6 1 5 0 5 1 6 6 2)) '1 '9999)
+(4 0 (0 5 5 5 1 6 1 5 0 5 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 1 6 1 0 6 5 1 6 6 1)) '1 '9999)
+(4 0 (0 5 5 5 1 6 1 0 6 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 5 1 6 1 0 6 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 4 4 0 5 1 5 5 0 5 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 4 0 0 2 6 6 1 6 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 4 0 0 2 6 6 1 6 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 5 0 0 2 6 6 1 6 5 0 2)) '1 '9999)
+(4 0 (5 5 5 5 0 0 2 6 6 1 6 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 0 2 6 6 1 6 0 6 2)) '1 '9999)
+(4 0 (5 5 5 4 0 0 2 6 6 1 6 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 0 2 6 6 1 0 6 6 2)) '1 '9999)
+(4 0 (5 5 5 4 0 0 2 6 6 1 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 4 0 0 2 6 6 0 7 5 5 1)) '1 '9999)
+(4 0 (4 4 4 4 0 0 2 6 6 0 7 5 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 4 0 0 2 6 0 2 7 6 6 2)) '1 '9999)
+(4 0 (5 4 4 4 0 0 2 6 0 2 7 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 4 0 0 2 0 7 2 7 6 6 2)) '1 '9999)
+(4 0 (4 4 4 4 0 0 2 0 7 2 7 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 4 4 0 0 2 0 7 2 7 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 1 6 2 6 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 1 6 2 6 5 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 1 6 2 6 5 0 5 5 0 2)) '1 '9999)
+(4 0 (5 5 5 1 1 6 2 6 5 0 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 1 6 2 6 5 0 5 0 6 2)) '1 '9999)
+(4 0 (5 5 5 0 1 6 2 6 5 0 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 1 6 2 6 5 0 0 6 6 2)) '1 '9999)
+(4 0 (5 5 4 0 1 6 2 6 5 0 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 1 6 2 6 0 1 6 6 6 2)) '1 '9999)
+(4 0 (4 4 4 0 1 6 2 6 0 1 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 1 6 2 0 6 1 6 6 6 2)) '1 '9999)
+(4 0 (4 4 4 0 1 6 2 0 6 1 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 4 0 1 6 2 0 6 1 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 1 6 2 5 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 1 6 2 5 5 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 6 1 6 2 5 5 0 5 5 0 2)) '1 '9999)
+(4 0 (5 5 1 6 1 6 2 5 5 0 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 1 6 2 5 5 0 5 0 6 2)) '1 '9999)
+(4 0 (5 5 1 5 1 6 2 5 5 0 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 1 6 2 5 5 0 0 6 6 2)) '1 '9999)
+(4 0 (5 5 0 5 1 6 2 5 5 0 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 1 6 2 5 0 1 6 6 6 2)) '1 '9999)
+(4 0 (4 4 0 5 1 6 2 5 0 1 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 1 6 2 0 6 1 6 6 6 1)) '1 '9999)
+(4 0 (4 4 0 5 1 6 2 0 6 1 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 0 5 1 6 2 0 6 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 1 6 1 5 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 1 6 1 5 5 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 6 1 6 1 5 5 0 5 5 0 2)) '1 '9999)
+(4 0 (5 1 6 6 1 6 1 5 5 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 1 6 1 5 5 0 5 0 6 2)) '1 '9999)
+(4 0 (5 1 6 5 1 6 1 5 5 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 1 6 1 5 5 0 0 6 6 2)) '1 '9999)
+(4 0 (5 1 5 5 1 6 1 5 5 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 1 6 1 5 0 1 6 6 6 2)) '1 '9999)
+(4 0 (4 0 5 5 1 6 1 5 0 1 6 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 1 6 1 0 6 1 6 6 6 1)) '1 '9999)
+(4 0 (4 0 5 5 1 6 1 0 6 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (4 0 5 5 1 6 1 0 6 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 0 5 7 5 0 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 0 5 7 5 0 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 0 5 7 5 0 0 5 5 0 2)) '1 '9999)
+(4 0 (1 6 6 6 0 5 7 5 0 0 5 5 0 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 0 5 7 5 0 0 5 0 6 2)) '1 '5)
+(4 0 (1 6 6 5 0 5 7 5 0 0 5 0 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 7 5 0 0 0 6 6 2)) '1 '5)
+(4 0 (1 6 5 5 0 5 7 5 0 0 0 6 6 2)) 
+UTILIDAD 
+5 
+5. Trace: MAXI-VAL ==> 5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 0 5 7 0 1 1 6 6 6 1)) '1 '5)
+(4 0 (0 5 5 5 0 5 7 0 1 1 6 6 6 1)) 
+UTILIDAD 
+6 
+5. Trace: MAXI-VAL ==> 6
+NIL 
+4. Trace: MINI-VAL ==> 5
+NODO-MAXI-DESPUES 
+(4 5 (0 5 5 5 0 5 7 0 1 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 5
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 4 4 0 5 1 5 0 5 5 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 4 0 0 2 6 1 6 6 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 4 0 0 2 6 1 6 6 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 5 0 0 2 6 1 6 6 5 0 2)) '1 '9999)
+(4 0 (5 5 5 5 0 0 2 6 1 6 6 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 0 2 6 1 6 6 0 6 2)) '1 '9999)
+(4 0 (5 5 5 4 0 0 2 6 1 6 6 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 0 2 6 1 6 0 6 6 2)) '1 '9999)
+(4 0 (5 5 5 4 0 0 2 6 1 6 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 0 2 6 1 0 7 6 6 2)) '1 '9999)
+(4 0 (5 5 4 4 0 0 2 6 1 0 7 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 4 0 0 2 6 0 7 6 5 5 1)) '1 '9999)
+(4 0 (4 4 4 4 0 0 2 6 0 7 6 5 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 4 0 0 2 0 2 7 7 6 6 2)) '1 '9999)
+(4 0 (4 4 4 4 0 0 2 0 2 7 7 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 4 4 0 0 2 0 2 7 7 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 1 6 2 6 0 5 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 1 6 2 6 0 5 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 1 6 2 6 0 5 5 5 0 2)) '1 '9999)
+(4 0 (5 5 5 1 1 6 2 6 0 5 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 1 6 2 6 0 5 5 0 6 2)) '1 '9999)
+(4 0 (5 5 5 0 1 6 2 6 0 5 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 1 6 2 6 0 5 0 6 6 2)) '1 '9999)
+(4 0 (5 5 4 0 1 6 2 6 0 5 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 1 6 2 6 0 0 6 6 6 2)) '1 '9999)
+(4 0 (5 4 4 0 1 6 2 6 0 0 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 1 6 2 0 1 6 6 6 6 2)) '1 '9999)
+(4 0 (4 4 4 0 1 6 2 0 1 6 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 4 0 1 6 2 0 1 6 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 1 6 2 5 0 5 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 1 6 2 5 0 5 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 6 1 6 2 5 0 5 5 5 0 2)) '1 '9999)
+(4 0 (5 5 1 6 1 6 2 5 0 5 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 1 6 2 5 0 5 5 0 6 2)) '1 '9999)
+(4 0 (5 5 1 5 1 6 2 5 0 5 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 1 6 2 5 0 5 0 6 6 2)) '1 '9999)
+(4 0 (5 5 0 5 1 6 2 5 0 5 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 1 6 2 5 0 0 6 6 6 2)) '1 '9999)
+(4 0 (5 4 0 5 1 6 2 5 0 0 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 1 6 2 0 1 6 6 6 6 1)) '1 '9999)
+(4 0 (4 4 0 5 1 6 2 0 1 6 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 0 5 1 6 2 0 1 6 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 1 6 1 5 0 5 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 1 6 1 5 0 5 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 6 1 6 1 5 0 5 5 5 0 2)) '1 '9999)
+(4 0 (5 1 6 6 1 6 1 5 0 5 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 1 6 1 5 0 5 5 0 6 2)) '1 '9999)
+(4 0 (5 1 6 5 1 6 1 5 0 5 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 1 6 1 5 0 5 0 6 6 2)) '1 '9999)
+(4 0 (5 1 5 5 1 6 1 5 0 5 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 1 6 1 5 0 0 6 6 6 2)) '1 '9999)
+(4 0 (5 0 5 5 1 6 1 5 0 0 6 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 1 6 1 0 1 6 6 6 6 1)) '1 '9999)
+(4 0 (4 0 5 5 1 6 1 0 1 6 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (4 0 5 5 1 6 1 0 1 6 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 0 5 2 5 0 5 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 0 5 2 5 0 5 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 0 5 2 5 0 5 5 5 0 2)) '1 '9999)
+(4 0 (1 6 6 6 0 5 2 5 0 5 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 0 5 2 5 0 5 5 0 6 2)) '1 '9999)
+(4 0 (1 6 6 5 0 5 2 5 0 5 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 2 5 0 5 0 6 6 2)) '1 '9999)
+(4 0 (1 6 5 5 0 5 2 5 0 5 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 0 5 2 5 0 0 6 6 6 2)) '1 '9999)
+(4 0 (1 5 5 5 0 5 2 5 0 0 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 0 5 2 0 1 6 6 6 6 1)) '1 '9999)
+(4 0 (0 5 5 5 0 5 2 0 1 6 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 5 0 5 2 0 1 6 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 4 4 0 5 1 0 6 5 5 5 5 0)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 4 0 0 2 1 7 6 6 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 4 0 0 2 1 7 6 6 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 5 0 0 2 1 7 6 6 5 0 1)) '1 '9999)
+(4 0 (5 5 5 5 0 0 2 1 7 6 6 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 0 2 1 7 6 6 0 6 1)) '1 '9999)
+(4 0 (5 5 5 4 0 0 2 1 7 6 6 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 4 0 0 2 1 7 6 0 6 6 1)) '1 '9999)
+(4 0 (5 5 5 4 0 0 2 1 7 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 0 2 1 7 0 7 6 6 1)) '1 '9999)
+(4 0 (5 5 4 4 0 0 2 1 7 0 7 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 4 0 0 2 1 0 7 7 6 6 1)) '1 '9999)
+(4 0 (5 5 4 4 0 0 2 1 0 7 7 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 4 0 0 2 0 8 6 6 5 5 0)) '1 '9999)
+(4 0 (4 4 4 4 0 0 2 0 8 6 6 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 4 4 0 0 2 0 8 6 6 5 5 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 1 6 2 1 6 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 1 6 2 1 6 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 1 6 2 1 6 5 5 5 0 1)) '1 '9999)
+(4 0 (5 5 5 1 1 6 2 1 6 5 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 1 6 2 1 6 5 5 0 6 1)) '1 '9999)
+(4 0 (5 5 5 0 1 6 2 1 6 5 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 1 6 2 1 6 5 0 6 6 1)) '1 '9999)
+(4 0 (5 5 4 0 1 6 2 1 6 5 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 1 6 2 1 6 0 6 6 6 1)) '1 '9999)
+(4 0 (5 4 4 0 1 6 2 1 6 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 1 6 2 1 0 6 6 6 6 1)) '1 '9999)
+(4 0 (5 4 4 0 1 6 2 1 0 6 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 1 6 2 0 7 5 5 5 5 0)) '1 '9999)
+(4 0 (4 4 4 0 1 6 2 0 7 5 5 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 4 0 1 6 2 0 7 5 5 5 5 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 1 6 2 0 6 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 1 6 2 0 6 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 6 1 6 2 0 6 5 5 5 0 1)) '1 '9999)
+(4 0 (5 5 1 6 1 6 2 0 6 5 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 1 6 2 0 6 5 5 0 6 1)) '1 '9999)
+(4 0 (5 5 1 5 1 6 2 0 6 5 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 1 6 2 0 6 5 0 6 6 1)) '1 '9999)
+(4 0 (5 5 0 5 1 6 2 0 6 5 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 1 6 2 0 6 0 6 6 6 1)) '1 '9999)
+(4 0 (5 4 0 5 1 6 2 0 6 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 1 6 2 0 0 6 6 6 6 1)) '1 '9999)
+(4 0 (5 4 0 5 1 6 2 0 0 6 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (5 4 0 5 1 6 2 0 0 6 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 1 6 1 0 6 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 1 6 1 0 6 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 6 1 6 1 0 6 5 5 5 0 1)) '1 '9999)
+(4 0 (5 1 6 6 1 6 1 0 6 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 1 6 1 0 6 5 5 0 6 1)) '1 '9999)
+(4 0 (5 1 6 5 1 6 1 0 6 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 1 6 1 0 6 5 0 6 6 1)) '1 '9999)
+(4 0 (5 1 5 5 1 6 1 0 6 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 1 6 1 0 6 0 6 6 6 1)) '1 '9999)
+(4 0 (5 0 5 5 1 6 1 0 6 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 1 6 1 0 0 6 6 6 6 1)) '1 '9999)
+(4 0 (5 0 5 5 1 6 1 0 0 6 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (5 0 5 5 1 6 1 0 0 6 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 0 5 8 0 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 0 5 8 0 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 0 5 8 0 0 5 5 5 0 1)) '1 '9999)
+(4 0 (1 6 6 6 0 5 8 0 0 5 5 5 0 1)) 
+UTILIDAD 
+7 
+5. Trace: MAXI-VAL ==> 7
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 0 5 8 0 0 5 5 0 6 1)) '1 '7)
+(4 0 (1 6 6 5 0 5 8 0 0 5 5 0 6 1)) 
+UTILIDAD 
+7 
+5. Trace: MAXI-VAL ==> 7
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 8 0 0 5 0 6 6 1)) '1 '7)
+(4 0 (1 6 5 5 0 5 8 0 0 5 0 6 6 1)) 
+UTILIDAD 
+7 
+5. Trace: MAXI-VAL ==> 7
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 0 5 8 0 0 0 6 6 6 1)) '1 '7)
+(4 0 (1 5 5 5 0 5 8 0 0 0 6 6 6 1)) 
+UTILIDAD 
+7 
+5. Trace: MAXI-VAL ==> 7
+NIL 
+4. Trace: MINI-VAL ==> 7
+NODO-MAXI-DESPUES 
+(4 7 (1 5 5 5 0 5 8 0 0 0 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 7
+NIL 
+2. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (1 5 5 5 0 5 8 0 0 0 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(1 0 (4 4 4 0 5 5 1 5 4 4 4 4 4 0)) 
+2. Trace: (MINI-VAL '(1 0 (4 4 4 0 5 5 1 5 4 4 4 4 4 0)) '1 '9999)
+3. Trace: (MAXI-VAL '(2 0 (5 5 5 0 5 5 1 5 4 4 4 4 0 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 5 5 0 5 0 2 6 5 5 5 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 5 0 5 0 2 6 5 5 5 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 0 5 0 2 6 5 5 5 0 1 2)) '1 '9999)
+(4 0 (6 6 5 0 5 0 2 6 5 5 5 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 0 5 0 2 6 5 5 0 5 1 2)) '1 '9999)
+(4 0 (6 6 5 0 5 0 2 6 5 5 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 5 0 2 6 5 0 6 5 1 2)) '1 '9999)
+(4 0 (6 5 5 0 5 0 2 6 5 0 6 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 0 2 6 0 6 6 5 1 2)) '1 '9999)
+(4 0 (5 5 5 0 5 0 2 6 0 6 6 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 0 2 0 6 6 6 5 1 2)) '1 '9999)
+(4 0 (5 5 5 0 5 0 2 0 6 6 6 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 5 0 5 0 2 0 6 6 6 5 1 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 5 0 0 6 2 6 5 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 5 0 0 6 2 6 5 5 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 0 0 6 2 6 5 5 4 0 1 2)) '1 '9999)
+(4 0 (6 6 5 0 0 6 2 6 5 5 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 0 6 2 6 5 5 0 5 1 2)) '1 '9999)
+(4 0 (6 5 5 0 0 6 2 6 5 5 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 0 6 2 6 5 0 5 5 1 2)) '1 '9999)
+(4 0 (6 5 5 0 0 6 2 6 5 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 0 6 2 6 0 6 5 5 1 2)) '1 '9999)
+(4 0 (5 5 5 0 0 6 2 6 0 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 0 6 2 0 6 6 5 5 1 2)) '1 '9999)
+(4 0 (5 5 5 0 0 6 2 0 6 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 5 0 0 6 2 0 6 6 5 5 1 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 1 6 6 2 6 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 1 6 6 2 6 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 0 1 6 6 2 6 4 4 4 0 1 2)) '1 '9999)
+(4 0 (6 6 0 1 6 6 2 6 4 4 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 1 6 6 2 6 4 4 0 5 1 2)) '1 '9999)
+(4 0 (6 5 0 1 6 6 2 6 4 4 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 1 6 6 2 6 4 0 5 5 1 2)) '1 '9999)
+(4 0 (5 5 0 1 6 6 2 6 4 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 0 1 6 6 2 6 0 5 5 5 0 7)) '1 '9999)
+(4 0 (0 5 0 1 6 6 2 6 0 5 5 5 0 7)) 
+UTILIDAD 
+-5 
+5. Trace: MAXI-VAL ==> -5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 1 6 6 2 0 5 5 5 5 1 2)) '1 '9999)
+(4 0 (5 5 0 1 6 6 2 0 5 5 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -5
+NODO-MAXI-DESPUES 
+(4 0 (5 5 0 1 6 6 2 0 5 5 5 5 1 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 6 1 6 6 2 5 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 6 1 6 6 2 5 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 1 6 6 2 5 4 4 4 0 1 2)) '1 '9999)
+(4 0 (6 1 6 1 6 6 2 5 4 4 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 6 1 6 6 2 5 4 4 0 5 1 2)) '1 '9999)
+(4 0 (6 0 6 1 6 6 2 5 4 4 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 6 1 6 6 2 5 4 0 5 5 1 2)) '1 '9999)
+(4 0 (5 0 6 1 6 6 2 5 4 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 6 1 6 6 2 5 0 5 5 5 0 7)) '1 '9999)
+(4 0 (0 0 6 1 6 6 2 5 0 5 5 5 0 7)) 
+UTILIDAD 
+-5 
+5. Trace: MAXI-VAL ==> -5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 6 1 6 6 2 0 5 5 5 5 0 7)) '1 '9999)
+(4 0 (0 0 6 1 6 6 2 0 5 5 5 5 0 7)) 
+UTILIDAD 
+-5 
+5. Trace: MAXI-VAL ==> -5
+NIL 
+4. Trace: MINI-VAL ==> -5
+NODO-MAXI-DESPUES 
+(4 0 (0 0 6 1 6 6 2 0 5 5 5 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 6 6 1 6 6 1 5 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 6 6 1 6 6 1 5 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 7 6 1 6 6 1 5 4 4 4 0 1 2)) '1 '9999)
+(4 0 (1 7 6 1 6 6 1 5 4 4 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 1 6 6 1 5 4 4 0 5 1 2)) '1 '9999)
+(4 0 (1 6 6 1 6 6 1 5 4 4 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 1 6 6 1 5 4 0 5 5 1 2)) '1 '9999)
+(4 0 (0 6 6 1 6 6 1 5 4 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 1 6 6 1 5 0 5 5 5 0 2)) '1 '9999)
+(4 0 (0 6 6 1 6 6 1 5 0 5 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 1 6 6 1 0 5 5 5 5 0 2)) '1 '9999)
+(4 0 (0 6 6 1 6 6 1 0 5 5 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 6 6 1 6 6 1 0 5 5 5 5 0 2)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 5 4 0 5 5 1 5 4 4 4 0 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 5 4 0 5 0 2 6 5 5 5 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 4 0 5 0 2 6 5 5 5 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 1 5 0 2 6 5 5 5 0 0 2)) '1 '9999)
+(4 0 (6 6 5 1 5 0 2 6 5 5 5 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 6 4 0 5 0 2 6 5 5 0 1 6 2)) '1 '9999)
+(4 0 (6 6 4 0 5 0 2 6 5 5 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 0 5 0 2 6 5 0 6 1 6 2)) '1 '9999)
+(4 0 (6 5 4 0 5 0 2 6 5 0 6 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 0 2 6 0 6 6 1 6 2)) '1 '9999)
+(4 0 (5 5 4 0 5 0 2 6 0 6 6 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 0 2 0 6 6 6 1 6 2)) '1 '9999)
+(4 0 (5 5 4 0 5 0 2 0 6 6 6 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 4 0 5 0 2 0 6 6 6 1 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 4 0 0 6 2 6 5 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 4 0 0 6 2 6 5 5 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 5 1 0 6 2 6 5 5 4 0 0 2)) '1 '9999)
+(4 0 (6 6 5 1 0 6 2 6 5 5 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 0 0 6 2 6 5 5 0 1 6 2)) '1 '9999)
+(4 0 (6 5 4 0 0 6 2 6 5 5 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 4 0 0 6 2 6 5 0 5 1 6 2)) '1 '9999)
+(4 0 (6 5 4 0 0 6 2 6 5 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 0 6 2 6 0 6 5 1 6 2)) '1 '9999)
+(4 0 (5 5 4 0 0 6 2 6 0 6 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 0 6 2 0 6 6 5 1 6 2)) '1 '9999)
+(4 0 (5 5 4 0 0 6 2 0 6 6 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 4 0 0 6 2 0 6 6 5 1 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 1 6 6 2 5 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 1 6 6 2 5 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 2 6 6 2 5 4 4 4 0 0 2)) '1 '9999)
+(4 0 (6 6 1 2 6 6 2 5 4 4 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 1 6 6 2 5 4 4 0 1 6 2)) '1 '9999)
+(4 0 (6 5 0 1 6 6 2 5 4 4 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 1 6 6 2 5 4 0 5 1 6 2)) '1 '9999)
+(4 0 (5 5 0 1 6 6 2 5 4 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 1 6 6 2 5 0 5 5 1 6 1)) '1 '9999)
+(4 0 (5 5 0 1 6 6 2 5 0 5 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 1 6 6 2 0 5 5 5 1 6 1)) '1 '9999)
+(4 0 (5 5 0 1 6 6 2 0 5 5 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 0 1 6 6 2 0 5 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 1 6 6 2 5 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 1 6 6 2 5 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 2 6 6 2 5 4 4 4 0 0 2)) '1 '9999)
+(4 0 (6 1 6 2 6 6 2 5 4 4 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 5 1 6 6 2 5 4 4 0 1 6 2)) '1 '9999)
+(4 0 (6 0 5 1 6 6 2 5 4 4 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 1 6 6 2 5 4 0 5 1 6 2)) '1 '9999)
+(4 0 (5 0 5 1 6 6 2 5 4 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 1 6 6 2 5 0 5 5 1 6 1)) '1 '9999)
+(4 0 (5 0 5 1 6 6 2 5 0 5 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 1 6 6 2 0 5 5 5 1 6 1)) '1 '9999)
+(4 0 (5 0 5 1 6 6 2 0 5 5 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 0 5 1 6 6 2 0 5 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 6 5 1 6 6 1 5 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 6 5 1 6 6 1 5 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 7 6 2 6 6 1 5 4 4 4 0 0 2)) '1 '9999)
+(4 0 (1 7 6 2 6 6 1 5 4 4 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 1 6 6 1 5 4 4 0 1 6 2)) '1 '9999)
+(4 0 (1 6 5 1 6 6 1 5 4 4 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 1 6 6 1 5 4 0 5 1 6 2)) '1 '9999)
+(4 0 (0 6 5 1 6 6 1 5 4 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 1 6 6 1 5 0 5 5 1 6 1)) '1 '9999)
+(4 0 (0 6 5 1 6 6 1 5 0 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 1 6 6 1 0 5 5 5 1 6 1)) '1 '9999)
+(4 0 (0 6 5 1 6 6 1 0 5 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 6 5 1 6 6 1 0 5 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 4 4 0 5 5 1 5 4 4 0 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 4 4 0 5 0 2 6 5 5 1 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 4 0 5 0 2 6 5 5 1 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 1 5 0 2 6 5 5 1 5 0 2)) '1 '9999)
+(4 0 (6 5 5 1 5 0 2 6 5 5 1 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 5 0 2 6 5 5 1 0 6 2)) '1 '9999)
+(4 0 (6 5 5 0 5 0 2 6 5 5 1 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 5 0 2 6 5 5 0 6 5 1)) '1 '9999)
+(4 0 (5 4 4 0 5 0 2 6 5 5 0 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 4 0 5 0 2 6 5 0 2 6 6 2)) '1 '9999)
+(4 0 (6 4 4 0 5 0 2 6 5 0 2 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 5 0 2 6 0 6 2 6 6 2)) '1 '9999)
+(4 0 (5 4 4 0 5 0 2 6 0 6 2 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 5 0 2 0 6 6 2 6 6 2)) '1 '9999)
+(4 0 (5 4 4 0 5 0 2 0 6 6 2 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 4 0 5 0 2 0 6 6 2 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 4 0 0 6 2 6 5 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 4 0 0 6 2 6 5 5 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 1 0 6 2 6 5 5 0 5 0 2)) '1 '9999)
+(4 0 (6 5 5 1 0 6 2 6 5 5 0 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 5 0 0 6 2 6 5 5 0 0 6 2)) '1 '9999)
+(4 0 (6 5 5 0 0 6 2 6 5 5 0 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 4 0 0 6 2 6 5 0 1 6 6 2)) '1 '9999)
+(4 0 (6 4 4 0 0 6 2 6 5 0 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 0 6 2 6 0 6 1 6 6 2)) '1 '9999)
+(4 0 (5 4 4 0 0 6 2 6 0 6 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 0 6 2 0 6 6 1 6 6 2)) '1 '9999)
+(4 0 (5 4 4 0 0 6 2 0 6 6 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 4 0 0 6 2 0 6 6 1 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 0 1 6 6 2 5 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 0 1 6 6 2 5 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 2 6 6 2 5 4 4 0 5 0 2)) '1 '9999)
+(4 0 (6 5 1 2 6 6 2 5 4 4 0 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 1 6 6 2 5 4 4 0 0 6 2)) '1 '9999)
+(4 0 (6 5 1 1 6 6 2 5 4 4 0 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 1 6 6 2 5 4 0 1 6 6 2)) '1 '9999)
+(4 0 (5 4 0 1 6 6 2 5 4 0 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 1 6 6 2 5 0 5 1 6 6 1)) '1 '9999)
+(4 0 (5 4 0 1 6 6 2 5 0 5 1 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 1 6 6 2 0 5 5 1 6 6 1)) '1 '9999)
+(4 0 (5 4 0 1 6 6 2 0 5 5 1 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 0 1 6 6 2 0 5 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 1 6 6 1 5 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 1 6 6 1 5 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 2 6 6 1 5 4 4 0 5 0 2)) '1 '9999)
+(4 0 (6 1 6 2 6 6 1 5 4 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 1 6 6 1 5 4 4 0 0 6 2)) '1 '9999)
+(4 0 (6 1 6 1 6 6 1 5 4 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 1 6 6 1 5 4 0 1 6 6 2)) '1 '9999)
+(4 0 (5 0 5 1 6 6 1 5 4 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 1 6 6 1 5 0 5 1 6 6 1)) '1 '9999)
+(4 0 (5 0 5 1 6 6 1 5 0 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 1 6 6 1 0 5 5 1 6 6 1)) '1 '9999)
+(4 0 (5 0 5 1 6 6 1 0 5 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (5 0 5 1 6 6 1 0 5 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 1 6 6 1 5 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 1 6 6 1 5 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 2 6 6 1 5 4 4 0 5 0 2)) '1 '9999)
+(4 0 (1 6 6 2 6 6 1 5 4 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 1 6 6 1 5 4 4 0 0 6 2)) '1 '9999)
+(4 0 (1 6 6 1 6 6 1 5 4 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 1 6 6 1 5 4 0 1 6 6 2)) '1 '9999)
+(4 0 (0 5 5 1 6 6 1 5 4 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 1 6 6 1 5 0 5 1 6 6 1)) '1 '9999)
+(4 0 (0 5 5 1 6 6 1 5 0 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 1 6 6 1 0 5 5 1 6 6 1)) '1 '9999)
+(4 0 (0 5 5 1 6 6 1 0 5 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 1 6 6 1 0 5 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 4 0 5 5 1 5 4 0 5 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 5 0 2 6 5 1 6 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 5 0 2 6 5 1 6 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 5 0 2 6 5 1 6 5 0 2)) '1 '9999)
+(4 0 (5 5 5 1 5 0 2 6 5 1 6 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 0 2 6 5 1 6 0 6 2)) '1 '9999)
+(4 0 (5 5 5 0 5 0 2 6 5 1 6 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 0 2 6 5 1 0 6 6 2)) '1 '9999)
+(4 0 (5 5 5 0 5 0 2 6 5 1 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 5 0 2 6 5 0 7 5 5 1)) '1 '9999)
+(4 0 (4 4 4 0 5 0 2 6 5 0 7 5 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 5 0 2 6 0 2 7 6 6 2)) '1 '9999)
+(4 0 (4 4 4 0 5 0 2 6 0 2 7 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 5 0 2 0 6 2 7 6 6 2)) '1 '9999)
+(4 0 (4 4 4 0 5 0 2 0 6 2 7 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 4 0 5 0 2 0 6 2 7 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 0 6 2 6 5 1 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 0 6 2 6 5 1 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 0 6 2 6 5 1 5 5 0 2)) '1 '9999)
+(4 0 (5 5 5 1 0 6 2 6 5 1 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 0 6 2 6 5 1 5 0 6 2)) '1 '9999)
+(4 0 (5 5 5 0 0 6 2 6 5 1 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 0 6 2 6 5 1 0 6 6 2)) '1 '9999)
+(4 0 (5 5 4 0 0 6 2 6 5 1 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 0 6 2 6 5 0 6 5 5 1)) '1 '9999)
+(4 0 (4 4 4 0 0 6 2 6 5 0 6 5 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 0 6 2 6 0 2 6 6 6 2)) '1 '9999)
+(4 0 (4 4 4 0 0 6 2 6 0 2 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 0 6 2 0 6 2 6 6 6 2)) '1 '9999)
+(4 0 (4 4 4 0 0 6 2 0 6 2 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 4 0 0 6 2 0 6 2 6 6 6 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 1 6 6 2 5 4 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 1 6 6 2 5 4 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 2 6 6 2 5 4 0 5 5 0 2)) '1 '9999)
+(4 0 (5 5 1 2 6 6 2 5 4 0 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 1 6 6 2 5 4 0 5 0 6 2)) '1 '9999)
+(4 0 (5 5 1 1 6 6 2 5 4 0 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 1 6 6 2 5 4 0 0 6 6 2)) '1 '9999)
+(4 0 (5 5 0 1 6 6 2 5 4 0 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 1 6 6 2 5 0 1 6 6 6 1)) '1 '9999)
+(4 0 (4 4 0 1 6 6 2 5 0 1 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 1 6 6 2 0 5 1 6 6 6 1)) '1 '9999)
+(4 0 (4 4 0 1 6 6 2 0 5 1 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 0 1 6 6 2 0 5 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 1 6 6 1 5 4 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 1 6 6 1 5 4 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 2 6 6 1 5 4 0 5 5 0 2)) '1 '9999)
+(4 0 (5 1 6 2 6 6 1 5 4 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 1 6 6 1 5 4 0 5 0 6 2)) '1 '9999)
+(4 0 (5 1 6 1 6 6 1 5 4 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 1 6 6 1 5 4 0 0 6 6 2)) '1 '9999)
+(4 0 (5 1 5 1 6 6 1 5 4 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 1 6 6 1 5 0 1 6 6 6 1)) '1 '9999)
+(4 0 (4 0 5 1 6 6 1 5 0 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 1 6 6 1 0 5 1 6 6 6 1)) '1 '9999)
+(4 0 (4 0 5 1 6 6 1 0 5 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (4 0 5 1 6 6 1 0 5 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 1 6 5 1 5 4 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 1 6 5 1 5 4 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 2 6 5 1 5 4 0 5 5 0 2)) '1 '9999)
+(4 0 (1 6 6 2 6 5 1 5 4 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 1 6 5 1 5 4 0 5 0 6 2)) '1 '9999)
+(4 0 (1 6 6 1 6 5 1 5 4 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 1 6 5 1 5 4 0 0 6 6 2)) '1 '9999)
+(4 0 (1 6 5 1 6 5 1 5 4 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 1 6 5 1 5 0 1 6 6 6 1)) '1 '9999)
+(4 0 (0 5 5 1 6 5 1 5 0 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 1 6 5 1 0 5 1 6 6 6 1)) '1 '9999)
+(4 0 (0 5 5 1 6 5 1 0 5 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 1 6 5 1 0 5 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 4 0 5 5 1 5 0 5 5 5 5 0)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 5 0 2 6 1 6 6 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 5 0 2 6 1 6 6 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 5 0 2 6 1 6 6 5 0 1)) '1 '9999)
+(4 0 (5 5 5 1 5 0 2 6 1 6 6 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 0 2 6 1 6 6 0 6 1)) '1 '9999)
+(4 0 (5 5 5 0 5 0 2 6 1 6 6 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 0 2 6 1 6 0 6 6 1)) '1 '9999)
+(4 0 (5 5 5 0 5 0 2 6 1 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 0 2 6 1 0 7 6 6 1)) '1 '9999)
+(4 0 (5 5 4 0 5 0 2 6 1 0 7 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 5 0 2 6 0 7 6 5 5 0)) '1 '9999)
+(4 0 (4 4 4 0 5 0 2 6 0 7 6 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 5 0 2 0 2 7 7 6 6 1)) '1 '9999)
+(4 0 (4 4 4 0 5 0 2 0 2 7 7 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 4 0 5 0 2 0 2 7 7 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 0 6 2 6 1 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 0 6 2 6 1 6 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 0 6 2 6 1 6 5 5 0 1)) '1 '9999)
+(4 0 (5 5 5 1 0 6 2 6 1 6 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 0 6 2 6 1 6 5 0 6 1)) '1 '9999)
+(4 0 (5 5 5 0 0 6 2 6 1 6 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 0 6 2 6 1 6 0 6 6 1)) '1 '9999)
+(4 0 (5 5 4 0 0 6 2 6 1 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 0 6 2 6 1 0 6 6 6 1)) '1 '9999)
+(4 0 (5 5 4 0 0 6 2 6 1 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 0 6 2 6 0 7 5 5 5 0)) '1 '9999)
+(4 0 (4 4 4 0 0 6 2 6 0 7 5 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 0 6 2 0 2 7 6 6 6 1)) '1 '9999)
+(4 0 (4 4 4 0 0 6 2 0 2 7 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 4 0 0 6 2 0 2 7 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 1 6 6 2 5 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 1 6 6 2 5 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 2 6 6 2 5 0 5 5 5 0 1)) '1 '9999)
+(4 0 (5 5 1 2 6 6 2 5 0 5 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 1 6 6 2 5 0 5 5 0 6 1)) '1 '9999)
+(4 0 (5 5 1 1 6 6 2 5 0 5 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 1 6 6 2 5 0 5 0 6 6 1)) '1 '9999)
+(4 0 (5 5 0 1 6 6 2 5 0 5 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 1 6 6 2 5 0 0 6 6 6 1)) '1 '9999)
+(4 0 (5 4 0 1 6 6 2 5 0 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 1 6 6 2 0 1 6 6 6 6 0)) '1 '9999)
+(4 0 (4 4 0 1 6 6 2 0 1 6 6 6 6 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 0 1 6 6 2 0 1 6 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 1 6 6 1 5 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 1 6 6 1 5 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 2 6 6 1 5 0 5 5 5 0 1)) '1 '9999)
+(4 0 (5 1 6 2 6 6 1 5 0 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 1 6 6 1 5 0 5 5 0 6 1)) '1 '9999)
+(4 0 (5 1 6 1 6 6 1 5 0 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 1 6 6 1 5 0 5 0 6 6 1)) '1 '9999)
+(4 0 (5 1 5 1 6 6 1 5 0 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 1 6 6 1 5 0 0 6 6 6 1)) '1 '9999)
+(4 0 (5 0 5 1 6 6 1 5 0 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 1 6 6 1 0 1 6 6 6 6 0)) '1 '9999)
+(4 0 (4 0 5 1 6 6 1 0 1 6 6 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (4 0 5 1 6 6 1 0 1 6 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 1 6 5 1 5 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 1 6 5 1 5 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 2 6 5 1 5 0 5 5 5 0 1)) '1 '9999)
+(4 0 (1 6 6 2 6 5 1 5 0 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 1 6 5 1 5 0 5 5 0 6 1)) '1 '9999)
+(4 0 (1 6 6 1 6 5 1 5 0 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 1 6 5 1 5 0 5 0 6 6 1)) '1 '9999)
+(4 0 (1 6 5 1 6 5 1 5 0 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 1 6 5 1 5 0 0 6 6 6 1)) '1 '9999)
+(4 0 (1 5 5 1 6 5 1 5 0 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 1 6 5 1 0 1 6 6 6 6 0)) '1 '9999)
+(4 0 (0 5 5 1 6 5 1 0 1 6 6 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (0 5 5 1 6 5 1 0 1 6 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 1
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 4 0 5 5 1 0 5 5 5 5 5 0)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 5 0 2 1 6 6 6 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 5 0 2 1 6 6 6 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 5 0 2 1 6 6 6 5 0 1)) '1 '9999)
+(4 0 (5 5 5 1 5 0 2 1 6 6 6 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 0 2 1 6 6 6 0 6 1)) '1 '9999)
+(4 0 (5 5 5 0 5 0 2 1 6 6 6 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 5 0 2 1 6 6 0 6 6 1)) '1 '9999)
+(4 0 (5 5 5 0 5 0 2 1 6 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 5 0 2 1 6 0 7 6 6 1)) '1 '9999)
+(4 0 (5 5 4 0 5 0 2 1 6 0 7 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 5 0 2 1 0 7 7 6 6 1)) '1 '9999)
+(4 0 (5 4 4 0 5 0 2 1 0 7 7 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 5 0 2 0 7 6 6 5 5 0)) '1 '9999)
+(4 0 (4 4 4 0 5 0 2 0 7 6 6 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 4 0 5 0 2 0 7 6 6 5 5 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 4 0 0 6 2 1 6 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 4 0 0 6 2 1 6 6 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 1 0 6 2 1 6 6 5 5 0 1)) '1 '9999)
+(4 0 (5 5 5 1 0 6 2 1 6 6 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 5 0 0 6 2 1 6 6 5 0 6 1)) '1 '9999)
+(4 0 (5 5 5 0 0 6 2 1 6 6 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 0 6 2 1 6 6 0 6 6 1)) '1 '9999)
+(4 0 (5 5 4 0 0 6 2 1 6 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 4 0 0 6 2 1 6 0 6 6 6 1)) '1 '9999)
+(4 0 (5 5 4 0 0 6 2 1 6 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 4 0 0 6 2 1 0 7 6 6 6 1)) '1 '9999)
+(4 0 (5 4 4 0 0 6 2 1 0 7 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 4 0 0 6 2 0 7 6 5 5 5 0)) '1 '9999)
+(4 0 (4 4 4 0 0 6 2 0 7 6 5 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 4 0 0 6 2 0 7 6 5 5 5 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 1 6 6 2 0 5 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 1 6 6 2 0 5 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 2 6 6 2 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (5 5 1 2 6 6 2 0 5 5 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 1 6 6 2 0 5 5 5 0 6 1)) '1 '9999)
+(4 0 (5 5 1 1 6 6 2 0 5 5 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 1 6 6 2 0 5 5 0 6 6 1)) '1 '9999)
+(4 0 (5 5 0 1 6 6 2 0 5 5 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 1 6 6 2 0 5 0 6 6 6 1)) '1 '9999)
+(4 0 (5 4 0 1 6 6 2 0 5 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 1 6 6 2 0 0 6 6 6 6 1)) '1 '9999)
+(4 0 (4 4 0 1 6 6 2 0 0 6 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 0 1 6 6 2 0 0 6 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 1 6 6 1 0 5 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 1 6 6 1 0 5 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 2 6 6 1 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (5 1 6 2 6 6 1 0 5 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 1 6 6 1 0 5 5 5 0 6 1)) '1 '9999)
+(4 0 (5 1 6 1 6 6 1 0 5 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 1 6 6 1 0 5 5 0 6 6 1)) '1 '9999)
+(4 0 (5 1 5 1 6 6 1 0 5 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 1 6 6 1 0 5 0 6 6 6 1)) '1 '9999)
+(4 0 (5 0 5 1 6 6 1 0 5 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 1 6 6 1 0 0 6 6 6 6 1)) '1 '9999)
+(4 0 (4 0 5 1 6 6 1 0 0 6 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (4 0 5 1 6 6 1 0 0 6 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 1 6 5 1 0 5 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 1 6 5 1 0 5 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 2 6 5 1 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (1 6 6 2 6 5 1 0 5 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 1 6 5 1 0 5 5 5 0 6 1)) '1 '9999)
+(4 0 (1 6 6 1 6 5 1 0 5 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 1 6 5 1 0 5 5 0 6 6 1)) '1 '9999)
+(4 0 (1 6 5 1 6 5 1 0 5 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 1 6 5 1 0 5 0 6 6 6 1)) '1 '9999)
+(4 0 (1 5 5 1 6 5 1 0 5 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 1 6 5 1 0 0 6 6 6 6 1)) '1 '9999)
+(4 0 (0 5 5 1 6 5 1 0 0 6 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (0 5 5 1 6 5 1 0 0 6 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 1
+NIL 
+2. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (0 5 5 1 6 5 1 0 0 6 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(1 0 (4 4 0 5 5 5 1 4 4 4 4 4 4 0)) 
+2. Trace: (MINI-VAL '(1 0 (4 4 0 5 5 5 1 4 4 4 4 4 4 0)) '1 '9999)
+3. Trace: (MAXI-VAL '(2 0 (5 5 1 5 5 5 1 4 4 4 4 4 0 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 5 1 5 5 0 2 5 5 5 5 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 1 5 5 0 2 5 5 5 5 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 5 5 0 2 5 5 5 5 0 1 2)) '1 '9999)
+(4 0 (6 6 1 5 5 0 2 5 5 5 5 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 5 5 0 2 5 5 5 0 5 1 2)) '1 '9999)
+(4 0 (6 6 1 5 5 0 2 5 5 5 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 5 5 0 2 5 5 0 6 5 1 2)) '1 '9999)
+(4 0 (6 5 1 5 5 0 2 5 5 0 6 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 0 2 5 0 6 6 5 1 2)) '1 '9999)
+(4 0 (5 5 1 5 5 0 2 5 0 6 6 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 5 5 0 2 0 6 6 6 5 0 7)) '1 '9999)
+(4 0 (0 5 1 5 5 0 2 0 6 6 6 5 0 7)) 
+UTILIDAD 
+-5 
+5. Trace: MAXI-VAL ==> -5
+NIL 
+4. Trace: MINI-VAL ==> -5
+NODO-MAXI-DESPUES 
+(4 -5 (0 5 1 5 5 0 2 0 6 6 6 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 1 5 0 6 2 5 5 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 1 5 0 6 2 5 5 5 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 5 0 6 2 5 5 5 4 0 1 2)) '1 '9999)
+(4 0 (6 6 1 5 0 6 2 5 5 5 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 5 0 6 2 5 5 5 0 5 1 2)) '1 '9999)
+(4 0 (6 5 1 5 0 6 2 5 5 5 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 5 0 6 2 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (6 5 1 5 0 6 2 5 5 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 0 6 2 5 0 6 5 5 1 2)) '1 '9999)
+(4 0 (5 5 1 5 0 6 2 5 0 6 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 5 0 6 2 0 6 6 5 5 0 7)) '1 '9999)
+(4 0 (0 5 1 5 0 6 2 0 6 6 5 5 0 7)) 
+UTILIDAD 
+-5 
+5. Trace: MAXI-VAL ==> -5
+NIL 
+4. Trace: MINI-VAL ==> -5
+NODO-MAXI-DESPUES 
+(4 -5 (0 5 1 5 0 6 2 0 6 6 5 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 1 0 6 6 2 5 5 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 1 0 6 6 2 5 5 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 0 6 6 2 5 5 4 4 0 1 2)) '1 '9999)
+(4 0 (6 6 1 0 6 6 2 5 5 4 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 0 6 6 2 5 5 4 0 5 1 2)) '1 '9999)
+(4 0 (6 5 1 0 6 6 2 5 5 4 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 0 6 6 2 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (5 5 1 0 6 6 2 5 5 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 0 6 6 2 5 0 5 5 5 1 2)) '1 '9999)
+(4 0 (5 5 1 0 6 6 2 5 0 5 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 0 6 6 2 0 6 5 5 5 0 7)) '1 '9999)
+(4 0 (0 5 1 0 6 6 2 0 6 5 5 5 0 7)) 
+UTILIDAD 
+-5 
+5. Trace: MAXI-VAL ==> -5
+NIL 
+4. Trace: MINI-VAL ==> -5
+NODO-MAXI-DESPUES 
+(4 -5 (0 5 1 0 6 6 2 0 6 5 5 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 6 5 5 1 4 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 6 5 5 1 4 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 0 6 5 5 1 4 4 4 4 0 1 2)) '1 '9999)
+(4 0 (6 6 0 6 5 5 1 4 4 4 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 6 5 5 1 4 4 4 0 5 1 2)) '1 '9999)
+(4 0 (6 5 0 6 5 5 1 4 4 4 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 6 5 5 1 4 4 0 5 5 1 2)) '1 '9999)
+(4 0 (5 5 0 6 5 5 1 4 4 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 0 6 5 5 1 4 0 5 5 5 0 7)) '1 '9999)
+(4 0 (0 5 0 6 5 5 1 4 0 5 5 5 0 7)) 
+UTILIDAD 
+-6 
+5. Trace: MAXI-VAL ==> -6
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 6 5 5 1 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (5 5 0 6 5 5 1 0 5 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -6
+NODO-MAXI-DESPUES 
+(4 -5 (5 5 0 6 5 5 1 0 5 5 5 5 0 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 2 6 6 6 2 4 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 2 6 6 6 2 4 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 2 6 6 6 2 4 4 4 4 0 1 2)) '1 '9999)
+(4 0 (6 1 2 6 6 6 2 4 4 4 4 0 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 2 6 6 6 2 4 4 4 0 5 1 2)) '1 '9999)
+(4 0 (6 0 2 6 6 6 2 4 4 4 0 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 2 6 6 6 2 4 4 0 5 5 1 2)) '1 '9999)
+(4 0 (5 0 2 6 6 6 2 4 4 0 5 5 1 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 2 6 6 6 2 4 0 5 5 5 0 7)) '1 '9999)
+(4 0 (0 0 2 6 6 6 2 4 0 5 5 5 0 7)) 
+UTILIDAD 
+-5 
+5. Trace: MAXI-VAL ==> -5
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 2 6 6 6 2 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (5 0 2 6 6 6 2 0 5 5 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> -5
+NODO-MAXI-DESPUES 
+(4 -5 (5 0 2 6 6 6 2 0 5 5 5 5 0 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 6 2 6 6 6 1 4 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 6 2 6 6 6 1 4 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 7 2 6 6 6 1 4 4 4 4 0 1 2)) '1 '9999)
+(4 0 (1 7 2 6 6 6 1 4 4 4 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 2 6 6 6 1 4 4 4 0 5 1 2)) '1 '9999)
+(4 0 (1 6 2 6 6 6 1 4 4 4 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 2 6 6 6 1 4 4 0 5 5 1 2)) '1 '9999)
+(4 0 (0 6 2 6 6 6 1 4 4 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 2 6 6 6 1 4 0 5 5 5 0 2)) '1 '9999)
+(4 0 (0 6 2 6 6 6 1 4 0 5 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 2 6 6 6 1 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (0 6 2 6 6 6 1 0 5 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (0 6 2 6 6 6 1 0 5 5 5 5 0 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> -1
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 5 0 5 5 5 1 4 4 4 4 0 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 5 5 0 2 5 5 5 5 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 5 5 0 2 5 5 5 5 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 6 5 0 2 5 5 5 5 0 0 2)) '1 '9999)
+(4 0 (6 6 1 6 5 0 2 5 5 5 5 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 6 0 5 5 0 2 5 5 5 0 1 6 2)) '1 '9999)
+(4 0 (6 6 0 5 5 0 2 5 5 5 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 5 0 2 5 5 0 6 1 6 2)) '1 '9999)
+(4 0 (6 5 0 5 5 0 2 5 5 0 6 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 0 2 5 0 6 6 1 6 2)) '1 '9999)
+(4 0 (5 5 0 5 5 0 2 5 0 6 6 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 0 2 0 6 6 6 1 6 1)) '1 '9999)
+(4 0 (5 5 0 5 5 0 2 0 6 6 6 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 0 5 5 0 2 0 6 6 6 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 5 0 6 2 5 5 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 5 0 6 2 5 5 5 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 6 0 6 2 5 5 5 4 0 0 2)) '1 '9999)
+(4 0 (6 6 1 6 0 6 2 5 5 5 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 0 6 2 5 5 5 0 1 6 2)) '1 '9999)
+(4 0 (6 5 0 5 0 6 2 5 5 5 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 5 0 6 2 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (6 5 0 5 0 6 2 5 5 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 0 6 2 5 0 6 5 1 6 2)) '1 '9999)
+(4 0 (5 5 0 5 0 6 2 5 0 6 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 0 6 2 0 6 6 5 1 6 1)) '1 '9999)
+(4 0 (5 5 0 5 0 6 2 0 6 6 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 0 5 0 6 2 0 6 6 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 5 0 0 6 6 2 5 5 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 5 0 0 6 6 2 5 5 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 6 1 1 6 6 2 5 5 4 4 0 0 2)) '1 '9999)
+(4 0 (6 6 1 1 6 6 2 5 5 4 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 0 0 6 6 2 5 5 4 0 1 6 2)) '1 '9999)
+(4 0 (6 5 0 0 6 6 2 5 5 4 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 0 6 6 2 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (5 5 0 0 6 6 2 5 5 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 0 6 6 2 5 0 5 5 1 6 2)) '1 '9999)
+(4 0 (5 5 0 0 6 6 2 5 0 5 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 0 6 6 2 0 6 5 5 1 6 1)) '1 '9999)
+(4 0 (5 5 0 0 6 6 2 0 6 5 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 5 0 0 6 6 2 0 6 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 1 6 6 6 2 4 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 1 6 6 6 2 4 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 2 7 6 6 2 4 4 4 4 0 0 2)) '1 '9999)
+(4 0 (6 1 2 7 6 6 2 4 4 4 4 0 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 1 6 6 6 2 4 4 4 0 1 6 2)) '1 '9999)
+(4 0 (6 0 1 6 6 6 2 4 4 4 0 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 1 6 6 6 2 4 4 0 5 1 6 2)) '1 '9999)
+(4 0 (5 0 1 6 6 6 2 4 4 0 5 1 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 1 6 6 6 2 4 0 5 5 1 6 1)) '1 '9999)
+(4 0 (5 0 1 6 6 6 2 4 0 5 5 1 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 1 6 6 6 2 0 5 5 5 0 5 2)) '1 '9999)
+(4 0 (5 0 1 6 6 6 2 0 5 5 5 0 5 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 0 1 6 6 6 2 0 5 5 5 0 5 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 6 1 6 6 6 1 4 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 6 1 6 6 6 1 4 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 7 2 7 6 6 1 4 4 4 4 0 0 2)) '1 '9999)
+(4 0 (1 7 2 7 6 6 1 4 4 4 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 6 6 6 1 4 4 4 0 1 6 2)) '1 '9999)
+(4 0 (1 6 1 6 6 6 1 4 4 4 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 1 6 6 6 1 4 4 0 5 1 6 2)) '1 '9999)
+(4 0 (0 6 1 6 6 6 1 4 4 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 1 6 6 6 1 4 0 5 5 1 6 1)) '1 '9999)
+(4 0 (0 6 1 6 6 6 1 4 0 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 1 6 6 6 1 0 5 5 5 0 5 8)) '1 '9999)
+(4 0 (0 0 1 6 6 6 1 0 5 5 5 0 5 8)) 
+UTILIDAD 
+-7 
+5. Trace: MAXI-VAL ==> -7
+NIL 
+4. Trace: MINI-VAL ==> -7
+NODO-MAXI-DESPUES 
+(4 0 (0 0 1 6 6 6 1 0 5 5 5 0 5 8)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 4 0 5 5 5 1 4 4 4 0 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 4 0 5 5 0 2 5 5 5 1 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 0 5 5 0 2 5 5 5 1 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 6 5 0 2 5 5 5 1 5 0 2)) '1 '9999)
+(4 0 (6 5 1 6 5 0 2 5 5 5 1 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 5 5 0 2 5 5 5 1 0 6 2)) '1 '9999)
+(4 0 (6 5 1 5 5 0 2 5 5 5 1 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 5 0 2 5 5 5 0 6 5 1)) '1 '9999)
+(4 0 (5 4 0 5 5 0 2 5 5 5 0 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 0 5 5 0 2 5 5 0 2 6 6 2)) '1 '9999)
+(4 0 (6 4 0 5 5 0 2 5 5 0 2 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 5 0 2 5 0 6 2 6 6 2)) '1 '9999)
+(4 0 (5 4 0 5 5 0 2 5 0 6 2 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 5 0 2 0 6 6 2 6 6 1)) '1 '9999)
+(4 0 (5 4 0 5 5 0 2 0 6 6 2 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 0 5 5 0 2 0 6 6 2 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 0 5 0 6 2 5 5 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 0 5 0 6 2 5 5 5 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 6 0 6 2 5 5 5 0 5 0 2)) '1 '9999)
+(4 0 (6 5 1 6 0 6 2 5 5 5 0 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 5 0 6 2 5 5 5 0 0 6 2)) '1 '9999)
+(4 0 (6 5 1 5 0 6 2 5 5 5 0 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 4 0 5 0 6 2 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (6 4 0 5 0 6 2 5 5 0 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 0 6 2 5 0 6 1 6 6 2)) '1 '9999)
+(4 0 (5 4 0 5 0 6 2 5 0 6 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 0 6 2 0 6 6 1 6 6 1)) '1 '9999)
+(4 0 (5 4 0 5 0 6 2 0 6 6 1 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 0 5 0 6 2 0 6 6 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 4 0 0 6 6 2 5 5 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 4 0 0 6 6 2 5 5 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 1 6 6 2 5 5 4 0 5 0 2)) '1 '9999)
+(4 0 (6 5 1 1 6 6 2 5 5 4 0 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 5 1 0 6 6 2 5 5 4 0 0 6 2)) '1 '9999)
+(4 0 (6 5 1 0 6 6 2 5 5 4 0 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 0 6 6 2 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (5 4 0 0 6 6 2 5 5 0 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 0 6 6 2 5 0 5 1 6 6 2)) '1 '9999)
+(4 0 (5 4 0 0 6 6 2 5 0 5 1 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 0 6 6 2 0 6 5 1 6 6 1)) '1 '9999)
+(4 0 (5 4 0 0 6 6 2 0 6 5 1 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (5 4 0 0 6 6 2 0 6 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 1 6 6 6 1 4 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 1 6 6 6 1 4 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 2 7 6 6 1 4 4 4 0 5 0 2)) '1 '9999)
+(4 0 (6 1 2 7 6 6 1 4 4 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 2 6 6 6 1 4 4 4 0 0 6 2)) '1 '9999)
+(4 0 (6 1 2 6 6 6 1 4 4 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 1 6 6 6 1 4 4 0 1 6 6 2)) '1 '9999)
+(4 0 (5 0 1 6 6 6 1 4 4 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 1 6 6 6 1 4 0 5 1 6 6 1)) '1 '9999)
+(4 0 (5 0 1 6 6 6 1 4 0 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 1 6 6 6 1 0 5 5 1 6 5 1)) '1 '9999)
+(4 0 (5 0 1 6 6 6 1 0 5 5 1 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (5 0 1 6 6 6 1 0 5 5 1 6 5 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 1 6 6 6 1 4 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 1 6 6 6 1 4 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 2 7 6 6 1 4 4 4 0 5 0 2)) '1 '9999)
+(4 0 (1 6 2 7 6 6 1 4 4 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 2 6 6 6 1 4 4 4 0 0 6 2)) '1 '9999)
+(4 0 (1 6 2 6 6 6 1 4 4 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 6 6 6 1 4 4 0 1 6 6 2)) '1 '9999)
+(4 0 (0 5 1 6 6 6 1 4 4 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 6 6 6 1 4 0 5 1 6 6 1)) '1 '9999)
+(4 0 (0 5 1 6 6 6 1 4 0 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 6 6 6 1 0 5 5 1 6 5 1)) '1 '9999)
+(4 0 (0 5 1 6 6 6 1 0 5 5 1 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 5 1 6 6 6 1 0 5 5 1 6 5 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 0 5 5 5 1 4 4 0 5 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 5 0 2 5 5 1 6 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 5 0 2 5 5 1 6 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 6 5 0 2 5 5 1 6 5 0 2)) '1 '9999)
+(4 0 (5 5 1 6 5 0 2 5 5 1 6 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 0 2 5 5 1 6 0 6 2)) '1 '9999)
+(4 0 (5 5 1 5 5 0 2 5 5 1 6 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 0 2 5 5 1 0 6 6 2)) '1 '9999)
+(4 0 (5 5 1 5 5 0 2 5 5 1 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 5 0 2 5 5 0 7 5 5 1)) '1 '9999)
+(4 0 (4 4 0 5 5 0 2 5 5 0 7 5 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 5 0 2 5 0 2 7 6 6 2)) '1 '9999)
+(4 0 (4 4 0 5 5 0 2 5 0 2 7 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 5 0 2 0 6 2 7 6 6 1)) '1 '9999)
+(4 0 (4 4 0 5 5 0 2 0 6 2 7 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 0 5 5 0 2 0 6 2 7 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 0 6 2 5 5 1 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 0 6 2 5 5 1 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 6 0 6 2 5 5 1 5 5 0 2)) '1 '9999)
+(4 0 (5 5 1 6 0 6 2 5 5 1 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 0 6 2 5 5 1 5 0 6 2)) '1 '9999)
+(4 0 (5 5 1 5 0 6 2 5 5 1 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 0 6 2 5 5 1 0 6 6 2)) '1 '9999)
+(4 0 (5 5 0 5 0 6 2 5 5 1 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 0 6 2 5 5 0 6 5 5 1)) '1 '9999)
+(4 0 (4 4 0 5 0 6 2 5 5 0 6 5 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 0 6 2 5 0 2 6 6 6 2)) '1 '9999)
+(4 0 (4 4 0 5 0 6 2 5 0 2 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 0 6 2 0 6 2 6 6 6 1)) '1 '9999)
+(4 0 (4 4 0 5 0 6 2 0 6 2 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 0 5 0 6 2 0 6 2 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 0 6 6 2 5 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 0 6 6 2 5 5 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 1 6 6 2 5 5 0 5 5 0 2)) '1 '9999)
+(4 0 (5 5 1 1 6 6 2 5 5 0 5 5 0 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 0 6 6 2 5 5 0 5 0 6 2)) '1 '9999)
+(4 0 (5 5 1 0 6 6 2 5 5 0 5 0 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 0 6 6 2 5 5 0 0 6 6 2)) '1 '9999)
+(4 0 (5 5 0 0 6 6 2 5 5 0 0 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 0 6 6 2 5 0 1 6 6 6 2)) '1 '9999)
+(4 0 (4 4 0 0 6 6 2 5 0 1 6 6 6 2)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 0 6 6 2 0 6 1 6 6 6 1)) '1 '9999)
+(4 0 (4 4 0 0 6 6 2 0 6 1 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 4 0 0 6 6 2 0 6 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 1 6 6 6 1 4 4 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 1 6 6 6 1 4 4 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 2 7 6 6 1 4 4 0 5 5 0 2)) '1 '9999)
+(4 0 (5 1 2 7 6 6 1 4 4 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 2 6 6 6 1 4 4 0 5 0 6 2)) '1 '9999)
+(4 0 (5 1 2 6 6 6 1 4 4 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 1 6 6 6 1 4 4 0 0 6 6 2)) '1 '9999)
+(4 0 (5 1 1 6 6 6 1 4 4 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 1 6 6 6 1 4 0 1 6 6 6 1)) '1 '9999)
+(4 0 (4 0 1 6 6 6 1 4 0 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 1 6 6 6 1 0 5 1 6 6 5 1)) '1 '9999)
+(4 0 (4 0 1 6 6 6 1 0 5 1 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (4 0 1 6 6 6 1 0 5 1 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 1 6 6 5 1 4 4 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 1 6 6 5 1 4 4 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 2 7 6 5 1 4 4 0 5 5 0 2)) '1 '9999)
+(4 0 (1 6 2 7 6 5 1 4 4 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 2 6 6 5 1 4 4 0 5 0 6 2)) '1 '9999)
+(4 0 (1 6 2 6 6 5 1 4 4 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 6 6 5 1 4 4 0 0 6 6 2)) '1 '9999)
+(4 0 (1 6 1 6 6 5 1 4 4 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 6 6 5 1 4 0 1 6 6 6 1)) '1 '9999)
+(4 0 (0 5 1 6 6 5 1 4 0 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 6 6 5 1 0 5 1 6 6 5 1)) '1 '9999)
+(4 0 (0 5 1 6 6 5 1 0 5 1 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 5 1 6 6 5 1 0 5 1 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 0 5 5 5 1 4 0 5 5 5 5 0)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 5 0 2 5 1 6 6 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 5 0 2 5 1 6 6 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 6 5 0 2 5 1 6 6 5 0 1)) '1 '9999)
+(4 0 (5 5 1 6 5 0 2 5 1 6 6 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 0 2 5 1 6 6 0 6 1)) '1 '9999)
+(4 0 (5 5 1 5 5 0 2 5 1 6 6 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 0 2 5 1 6 0 6 6 1)) '1 '9999)
+(4 0 (5 5 1 5 5 0 2 5 1 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 0 2 5 1 0 7 6 6 1)) '1 '9999)
+(4 0 (5 5 0 5 5 0 2 5 1 0 7 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 5 0 2 5 0 7 6 5 5 0)) '1 '9999)
+(4 0 (4 4 0 5 5 0 2 5 0 7 6 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 5 0 2 0 2 7 7 6 6 0)) '1 '9999)
+(4 0 (4 4 0 5 5 0 2 0 2 7 7 6 6 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 0 5 5 0 2 0 2 7 7 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 0 6 2 5 1 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 0 6 2 5 1 6 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 6 0 6 2 5 1 6 5 5 0 1)) '1 '9999)
+(4 0 (5 5 1 6 0 6 2 5 1 6 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 0 6 2 5 1 6 5 0 6 1)) '1 '9999)
+(4 0 (5 5 1 5 0 6 2 5 1 6 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 0 6 2 5 1 6 0 6 6 1)) '1 '9999)
+(4 0 (5 5 0 5 0 6 2 5 1 6 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 0 6 2 5 1 0 6 6 6 1)) '1 '9999)
+(4 0 (5 5 0 5 0 6 2 5 1 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 0 6 2 5 0 7 5 5 5 0)) '1 '9999)
+(4 0 (4 4 0 5 0 6 2 5 0 7 5 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 0 6 2 0 2 7 6 6 6 0)) '1 '9999)
+(4 0 (4 4 0 5 0 6 2 0 2 7 6 6 6 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 0 5 0 6 2 0 2 7 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 0 6 6 2 5 1 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 0 6 6 2 5 1 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 1 6 6 2 5 1 5 5 5 0 1)) '1 '9999)
+(4 0 (5 5 1 1 6 6 2 5 1 5 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 0 6 6 2 5 1 5 5 0 6 1)) '1 '9999)
+(4 0 (5 5 1 0 6 6 2 5 1 5 5 0 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 0 6 6 2 5 1 5 0 6 6 1)) '1 '9999)
+(4 0 (5 5 0 0 6 6 2 5 1 5 0 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 0 6 6 2 5 1 0 6 6 6 1)) '1 '9999)
+(4 0 (5 4 0 0 6 6 2 5 1 0 6 6 6 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 0 6 6 2 5 0 6 5 5 5 0)) '1 '9999)
+(4 0 (4 4 0 0 6 6 2 5 0 6 5 5 5 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 0 6 6 2 0 2 6 6 6 6 0)) '1 '9999)
+(4 0 (4 4 0 0 6 6 2 0 2 6 6 6 6 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 0 0 6 6 2 0 2 6 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 1 6 6 6 1 4 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 1 6 6 6 1 4 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 2 7 6 6 1 4 0 5 5 5 0 1)) '1 '9999)
+(4 0 (5 1 2 7 6 6 1 4 0 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 2 6 6 6 1 4 0 5 5 0 6 1)) '1 '9999)
+(4 0 (5 1 2 6 6 6 1 4 0 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 1 6 6 6 1 4 0 5 0 6 6 1)) '1 '9999)
+(4 0 (5 1 1 6 6 6 1 4 0 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 1 6 6 6 1 4 0 0 6 6 6 1)) '1 '9999)
+(4 0 (5 0 1 6 6 6 1 4 0 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 1 6 6 6 1 0 1 6 6 6 5 0)) '1 '9999)
+(4 0 (4 0 1 6 6 6 1 0 1 6 6 6 5 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (4 0 1 6 6 6 1 0 1 6 6 6 5 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 1 6 6 5 1 4 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 1 6 6 5 1 4 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 2 7 6 5 1 4 0 5 5 5 0 1)) '1 '9999)
+(4 0 (1 6 2 7 6 5 1 4 0 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 2 6 6 5 1 4 0 5 5 0 6 1)) '1 '9999)
+(4 0 (1 6 2 6 6 5 1 4 0 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 6 6 5 1 4 0 5 0 6 6 1)) '1 '9999)
+(4 0 (1 6 1 6 6 5 1 4 0 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 1 6 6 5 1 4 0 0 6 6 6 1)) '1 '9999)
+(4 0 (1 5 1 6 6 5 1 4 0 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 6 6 5 1 0 1 6 6 6 5 0)) '1 '9999)
+(4 0 (0 5 1 6 6 5 1 0 1 6 6 6 5 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (0 5 1 6 6 5 1 0 1 6 6 6 5 0)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 1
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 4 0 5 5 5 1 0 5 5 5 5 4 0)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 5 0 2 1 6 6 6 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 5 0 2 1 6 6 6 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 0 2 1 6 6 6 5 0 1)) '1 '9999)
+(4 0 (5 5 1 5 5 0 2 1 6 6 6 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 0 2 1 6 6 6 0 5 1)) '1 '9999)
+(4 0 (5 5 1 5 5 0 2 1 6 6 6 0 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 5 0 2 1 6 6 0 6 5 1)) '1 '9999)
+(4 0 (5 5 1 5 5 0 2 1 6 6 0 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 5 0 2 1 6 0 7 6 5 1)) '1 '9999)
+(4 0 (5 5 0 5 5 0 2 1 6 0 7 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 5 0 2 1 0 7 7 6 5 1)) '1 '9999)
+(4 0 (5 4 0 5 5 0 2 1 0 7 7 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 5 0 2 0 7 6 6 5 4 0)) '1 '9999)
+(4 0 (4 4 0 5 5 0 2 0 7 6 6 5 4 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 0 5 5 0 2 0 7 6 6 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 5 0 6 2 1 6 6 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 5 0 6 2 1 6 6 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 0 6 2 1 6 6 5 5 0 1)) '1 '9999)
+(4 0 (5 5 1 5 0 6 2 1 6 6 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 5 0 6 2 1 6 6 5 0 5 1)) '1 '9999)
+(4 0 (5 5 1 5 0 6 2 1 6 6 5 0 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 0 6 2 1 6 6 0 6 5 1)) '1 '9999)
+(4 0 (5 5 0 5 0 6 2 1 6 6 0 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 5 0 6 2 1 6 0 6 6 5 1)) '1 '9999)
+(4 0 (5 5 0 5 0 6 2 1 6 0 6 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 5 0 6 2 1 0 7 6 6 5 1)) '1 '9999)
+(4 0 (5 4 0 5 0 6 2 1 0 7 6 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 5 0 6 2 0 7 6 5 5 4 0)) '1 '9999)
+(4 0 (4 4 0 5 0 6 2 0 7 6 5 5 4 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 0 5 0 6 2 0 7 6 5 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 4 0 0 6 6 2 1 6 5 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 4 0 0 6 6 2 1 6 5 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 0 6 6 2 1 6 5 5 5 0 1)) '1 '9999)
+(4 0 (5 5 1 0 6 6 2 1 6 5 5 5 0 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 1 0 6 6 2 1 6 5 5 0 5 1)) '1 '9999)
+(4 0 (5 5 1 0 6 6 2 1 6 5 5 0 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 5 0 0 6 6 2 1 6 5 0 6 5 1)) '1 '9999)
+(4 0 (5 5 0 0 6 6 2 1 6 5 0 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 0 6 6 2 1 6 0 6 6 5 1)) '1 '9999)
+(4 0 (5 4 0 0 6 6 2 1 6 0 6 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 4 0 0 6 6 2 1 0 6 6 6 5 1)) '1 '9999)
+(4 0 (5 4 0 0 6 6 2 1 0 6 6 6 5 1)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 4 0 0 6 6 2 0 7 5 5 5 4 0)) '1 '9999)
+(4 0 (4 4 0 0 6 6 2 0 7 5 5 5 4 0)) 
+UTILIDAD 
+2 
+5. Trace: MAXI-VAL ==> 2
+NIL 
+4. Trace: MINI-VAL ==> 1
+NODO-MAXI-DESPUES 
+(4 1 (4 4 0 0 6 6 2 0 7 5 5 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 1 6 6 6 1 0 5 5 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 1 6 6 6 1 0 5 5 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 2 6 6 6 1 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (5 1 2 6 6 6 1 0 5 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 2 6 6 6 1 0 5 5 5 0 5 1)) '1 '9999)
+(4 0 (5 1 2 6 6 6 1 0 5 5 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 1 6 6 6 1 0 5 5 0 6 5 1)) '1 '9999)
+(4 0 (5 1 1 6 6 6 1 0 5 5 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 1 6 6 6 1 0 5 0 6 6 5 1)) '1 '9999)
+(4 0 (5 0 1 6 6 6 1 0 5 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 1 6 6 6 1 0 0 6 6 6 5 1)) '1 '9999)
+(4 0 (4 0 1 6 6 6 1 0 0 6 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (4 0 1 6 6 6 1 0 0 6 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 1 6 6 5 1 0 5 5 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 1 6 6 5 1 0 5 5 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 2 6 6 5 1 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (1 6 2 6 6 5 1 0 5 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 2 6 6 5 1 0 5 5 5 0 5 1)) '1 '9999)
+(4 0 (1 6 2 6 6 5 1 0 5 5 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 6 6 5 1 0 5 5 0 6 5 1)) '1 '9999)
+(4 0 (1 6 1 6 6 5 1 0 5 5 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 1 6 6 5 1 0 5 0 6 6 5 1)) '1 '9999)
+(4 0 (1 5 1 6 6 5 1 0 5 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 1 6 6 5 1 0 0 6 6 6 5 1)) '1 '9999)
+(4 0 (0 5 1 6 6 5 1 0 0 6 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 1 (0 5 1 6 6 5 1 0 0 6 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 1
+NIL 
+2. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 1 (0 5 1 6 6 5 1 0 0 6 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(1 0 (4 0 5 5 5 5 0 4 4 4 4 4 4 0)) 
+2. Trace: (MINI-VAL '(1 0 (4 0 5 5 5 5 0 4 4 4 4 4 4 0)) '1 '9999)
+3. Trace: (MAXI-VAL '(2 0 (5 1 6 5 5 5 0 4 4 4 4 4 0 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 1 6 5 5 0 1 5 5 5 5 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 1 6 5 5 0 1 5 5 5 5 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 2 6 5 5 0 1 5 5 5 5 0 1 2)) '1 '9999)
+(4 0 (6 2 6 5 5 0 1 5 5 5 5 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 2 6 5 5 0 1 5 5 5 0 5 1 2)) '1 '9999)
+(4 0 (6 2 6 5 5 0 1 5 5 5 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 5 0 1 5 5 0 6 5 1 2)) '1 '9999)
+(4 0 (6 1 6 5 5 0 1 5 5 0 6 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 1 5 0 6 6 5 1 2)) '1 '9999)
+(4 0 (5 1 6 5 5 0 1 5 0 6 6 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 5 5 0 1 0 6 6 6 5 0 7)) '1 '9999)
+(4 0 (0 1 6 5 5 0 1 0 6 6 6 5 0 7)) 
+UTILIDAD 
+-6 
+5. Trace: MAXI-VAL ==> -6
+NIL 
+4. Trace: MINI-VAL ==> -6
+NODO-MAXI-DESPUES 
+(4 -6 (0 1 6 5 5 0 1 0 6 6 6 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 1 6 5 0 6 1 5 5 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 1 6 5 0 6 1 5 5 5 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 2 6 5 0 6 1 5 5 5 4 0 1 2)) '1 '9999)
+(4 0 (6 2 6 5 0 6 1 5 5 5 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 0 6 1 5 5 5 0 5 1 2)) '1 '9999)
+(4 0 (6 1 6 5 0 6 1 5 5 5 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 0 6 1 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (6 1 6 5 0 6 1 5 5 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 0 6 1 5 0 6 5 5 1 2)) '1 '9999)
+(4 0 (5 1 6 5 0 6 1 5 0 6 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 5 0 6 1 0 6 6 5 5 0 7)) '1 '9999)
+(4 0 (0 1 6 5 0 6 1 0 6 6 5 5 0 7)) 
+UTILIDAD 
+-6 
+5. Trace: MAXI-VAL ==> -6
+NIL 
+4. Trace: MINI-VAL ==> -6
+NODO-MAXI-DESPUES 
+(4 -6 (0 1 6 5 0 6 1 0 6 6 5 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 1 6 0 6 6 1 5 5 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 1 6 0 6 6 1 5 5 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 2 6 0 6 6 1 5 5 4 4 0 1 2)) '1 '9999)
+(4 0 (6 2 6 0 6 6 1 5 5 4 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 0 6 6 1 5 5 4 0 5 1 2)) '1 '9999)
+(4 0 (6 1 6 0 6 6 1 5 5 4 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 0 6 6 1 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (5 1 6 0 6 6 1 5 5 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 0 6 6 1 5 0 5 5 5 1 2)) '1 '9999)
+(4 0 (5 1 6 0 6 6 1 5 0 5 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 0 6 6 1 0 6 5 5 5 0 7)) '1 '9999)
+(4 0 (0 1 6 0 6 6 1 0 6 5 5 5 0 7)) 
+UTILIDAD 
+-6 
+5. Trace: MAXI-VAL ==> -6
+NIL 
+4. Trace: MINI-VAL ==> -6
+NODO-MAXI-DESPUES 
+(4 -6 (0 1 6 0 6 6 1 0 6 5 5 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 1 0 6 6 6 1 5 5 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 1 0 6 6 6 1 5 5 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 2 0 6 6 6 1 5 5 4 4 0 1 2)) '1 '9999)
+(4 0 (6 2 0 6 6 6 1 5 5 4 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 0 6 6 6 1 5 5 4 0 5 1 2)) '1 '9999)
+(4 0 (6 1 0 6 6 6 1 5 5 4 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 0 6 6 6 1 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (5 1 0 6 6 6 1 5 5 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 0 6 6 6 1 5 0 5 5 5 1 2)) '1 '9999)
+(4 0 (5 1 0 6 6 6 1 5 0 5 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 0 6 6 6 1 0 6 5 5 5 0 7)) '1 '9999)
+(4 0 (0 1 0 6 6 6 1 0 6 5 5 5 0 7)) 
+UTILIDAD 
+-6 
+5. Trace: MAXI-VAL ==> -6
+NIL 
+4. Trace: MINI-VAL ==> -6
+NODO-MAXI-DESPUES 
+(4 -6 (0 1 0 6 6 6 1 0 6 5 5 5 0 7)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 7 5 5 5 0 4 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 7 5 5 5 0 4 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 7 5 5 5 0 4 4 4 4 0 1 2)) '1 '9999)
+(4 0 (6 1 7 5 5 5 0 4 4 4 4 0 1 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 7 5 5 5 0 4 4 4 0 5 1 2)) '1 '9999)
+(4 0 (6 0 7 5 5 5 0 4 4 4 0 5 1 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 7 5 5 5 0 4 4 0 5 5 1 2)) '1 '9999)
+(4 0 (5 0 7 5 5 5 0 4 4 0 5 5 1 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 7 5 5 5 0 4 0 5 5 5 0 7)) '1 '9999)
+(4 0 (0 0 7 5 5 5 0 4 0 5 5 5 0 7)) 
+UTILIDAD 
+-7 
+5. Trace: MAXI-VAL ==> -7
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 7 5 5 5 0 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (5 0 7 5 5 5 0 0 5 5 5 5 0 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+4. Trace: MINI-VAL ==> -7
+NODO-MAXI-DESPUES 
+(4 -6 (5 0 7 5 5 5 0 0 5 5 5 5 0 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 2 7 6 6 6 0 4 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 2 7 6 6 6 0 4 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 3 7 6 6 6 0 4 4 4 4 0 1 2)) '1 '9999)
+(4 0 (1 3 7 6 6 6 0 4 4 4 4 0 1 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 2 7 6 6 6 0 4 4 4 0 5 1 2)) '1 '9999)
+(4 0 (1 2 7 6 6 6 0 4 4 4 0 5 1 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 2 7 6 6 6 0 4 4 0 5 5 1 2)) '1 '9999)
+(4 0 (0 2 7 6 6 6 0 4 4 0 5 5 1 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 2 7 6 6 6 0 4 0 5 5 5 0 2)) '1 '9999)
+(4 0 (0 2 7 6 6 6 0 4 0 5 5 5 0 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 2 7 6 6 6 0 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (0 2 7 6 6 6 0 0 5 5 5 5 0 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -2 (0 2 7 6 6 6 0 0 5 5 5 5 0 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> -2
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 1 5 5 5 5 0 4 4 4 4 0 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 1 5 5 5 0 1 5 5 5 5 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 1 5 5 5 0 1 5 5 5 5 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 2 6 6 5 0 1 5 5 5 5 0 0 2)) '1 '9999)
+(4 0 (6 2 6 6 5 0 1 5 5 5 5 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 2 5 5 5 0 1 5 5 5 0 1 6 2)) '1 '9999)
+(4 0 (6 2 5 5 5 0 1 5 5 5 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 5 5 5 0 1 5 5 0 6 1 6 2)) '1 '9999)
+(4 0 (6 1 5 5 5 0 1 5 5 0 6 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 5 0 1 5 0 6 6 1 6 2)) '1 '9999)
+(4 0 (5 1 5 5 5 0 1 5 0 6 6 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 5 0 1 0 6 6 6 1 6 1)) '1 '9999)
+(4 0 (5 1 5 5 5 0 1 0 6 6 6 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (5 1 5 5 5 0 1 0 6 6 6 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 1 5 5 0 6 1 5 5 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 1 5 5 0 6 1 5 5 5 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 2 6 6 0 6 1 5 5 5 4 0 0 2)) '1 '9999)
+(4 0 (6 2 6 6 0 6 1 5 5 5 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 5 5 0 6 1 5 5 5 0 1 6 2)) '1 '9999)
+(4 0 (6 1 5 5 0 6 1 5 5 5 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 5 5 0 6 1 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (6 1 5 5 0 6 1 5 5 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 0 6 1 5 0 6 5 1 6 2)) '1 '9999)
+(4 0 (5 1 5 5 0 6 1 5 0 6 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 0 6 1 0 6 6 5 1 6 1)) '1 '9999)
+(4 0 (5 1 5 5 0 6 1 0 6 6 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (5 1 5 5 0 6 1 0 6 6 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 1 5 0 6 6 1 5 5 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 1 5 0 6 6 1 5 5 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 2 6 1 6 6 1 5 5 4 4 0 0 2)) '1 '9999)
+(4 0 (6 2 6 1 6 6 1 5 5 4 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 5 0 6 6 1 5 5 4 0 1 6 2)) '1 '9999)
+(4 0 (6 1 5 0 6 6 1 5 5 4 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 0 6 6 1 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (5 1 5 0 6 6 1 5 5 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 0 6 6 1 5 0 5 5 1 6 2)) '1 '9999)
+(4 0 (5 1 5 0 6 6 1 5 0 5 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 0 6 6 1 0 6 5 5 1 6 1)) '1 '9999)
+(4 0 (5 1 5 0 6 6 1 0 6 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (5 1 5 0 6 6 1 0 6 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 1 0 6 6 6 1 5 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 1 0 6 6 6 1 5 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 2 1 7 6 6 1 5 4 4 4 0 0 2)) '1 '9999)
+(4 0 (6 2 1 7 6 6 1 5 4 4 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 0 6 6 6 1 5 4 4 0 1 6 2)) '1 '9999)
+(4 0 (6 1 0 6 6 6 1 5 4 4 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 0 6 6 6 1 5 4 0 5 1 6 2)) '1 '9999)
+(4 0 (5 1 0 6 6 6 1 5 4 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 0 6 6 6 1 5 0 5 5 1 6 1)) '1 '9999)
+(4 0 (5 1 0 6 6 6 1 5 0 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 0 6 6 6 1 0 5 5 5 1 6 1)) '1 '9999)
+(4 0 (5 1 0 6 6 6 1 0 5 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (5 1 0 6 6 6 1 0 5 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 6 5 5 5 0 4 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 6 5 5 5 0 4 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 7 6 5 5 0 4 4 4 4 0 0 2)) '1 '9999)
+(4 0 (6 1 7 6 5 5 0 4 4 4 4 0 0 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 6 5 5 5 0 4 4 4 0 1 6 2)) '1 '9999)
+(4 0 (6 0 6 5 5 5 0 4 4 4 0 1 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 6 5 5 5 0 4 4 0 5 1 6 2)) '1 '9999)
+(4 0 (5 0 6 5 5 5 0 4 4 0 5 1 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 6 5 5 5 0 4 0 5 5 1 6 1)) '1 '9999)
+(4 0 (5 0 6 5 5 5 0 4 0 5 5 1 6 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 6 5 5 5 0 0 5 5 5 0 5 2)) '1 '9999)
+(4 0 (5 0 6 5 5 5 0 0 5 5 5 0 5 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -1 (5 0 6 5 5 5 0 0 5 5 5 0 5 2)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 2 6 6 6 6 0 4 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 2 6 6 6 6 0 4 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 3 7 7 6 6 0 4 4 4 4 0 0 2)) '1 '9999)
+(4 0 (1 3 7 7 6 6 0 4 4 4 4 0 0 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 2 6 6 6 6 0 4 4 4 0 1 6 2)) '1 '9999)
+(4 0 (1 2 6 6 6 6 0 4 4 4 0 1 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 2 6 6 6 6 0 4 4 0 5 1 6 2)) '1 '9999)
+(4 0 (0 2 6 6 6 6 0 4 4 0 5 1 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 2 6 6 6 6 0 4 0 5 5 1 6 1)) '1 '9999)
+(4 0 (0 2 6 6 6 6 0 4 0 5 5 1 6 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 6 6 6 6 0 0 5 5 5 0 5 4)) '1 '9999)
+(4 0 (0 0 6 6 6 6 0 0 5 5 5 0 5 4)) 
+UTILIDAD 
+-4 
+5. Trace: MAXI-VAL ==> -4
+NIL 
+4. Trace: MINI-VAL ==> -4
+NODO-MAXI-DESPUES 
+(4 -1 (0 0 6 6 6 6 0 0 5 5 5 0 5 4)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> -1
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (5 0 5 5 5 5 0 4 4 4 0 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 5 5 0 1 5 5 5 1 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 5 5 0 1 5 5 5 1 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 6 5 0 1 5 5 5 1 5 0 2)) '1 '9999)
+(4 0 (6 1 6 6 5 0 1 5 5 5 1 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 5 0 1 5 5 5 1 0 6 2)) '1 '9999)
+(4 0 (6 1 6 5 5 0 1 5 5 5 1 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 5 0 1 5 5 5 0 6 5 1)) '1 '9999)
+(4 0 (5 0 5 5 5 0 1 5 5 5 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 5 5 5 0 1 5 5 0 2 6 6 2)) '1 '9999)
+(4 0 (6 0 5 5 5 0 1 5 5 0 2 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 5 0 1 5 0 6 2 6 6 2)) '1 '9999)
+(4 0 (5 0 5 5 5 0 1 5 0 6 2 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 5 0 1 0 6 6 2 6 6 1)) '1 '9999)
+(4 0 (5 0 5 5 5 0 1 0 6 6 2 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (5 0 5 5 5 0 1 0 6 6 2 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 5 0 6 1 5 5 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 5 0 6 1 5 5 5 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 6 0 6 1 5 5 5 0 5 0 2)) '1 '9999)
+(4 0 (6 1 6 6 0 6 1 5 5 5 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 5 0 6 1 5 5 5 0 0 6 2)) '1 '9999)
+(4 0 (6 1 6 5 0 6 1 5 5 5 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 0 5 5 0 6 1 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (6 0 5 5 0 6 1 5 5 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 0 6 1 5 0 6 1 6 6 2)) '1 '9999)
+(4 0 (5 0 5 5 0 6 1 5 0 6 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 0 6 1 0 6 6 1 6 6 1)) '1 '9999)
+(4 0 (5 0 5 5 0 6 1 0 6 6 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (5 0 5 5 0 6 1 0 6 6 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 5 0 6 6 1 5 5 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 5 0 6 6 1 5 5 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 1 6 6 1 5 5 4 0 5 0 2)) '1 '9999)
+(4 0 (6 1 6 1 6 6 1 5 5 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 6 0 6 6 1 5 5 4 0 0 6 2)) '1 '9999)
+(4 0 (6 1 6 0 6 6 1 5 5 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 0 6 6 1 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (5 0 5 0 6 6 1 5 5 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 0 6 6 1 5 0 5 1 6 6 2)) '1 '9999)
+(4 0 (5 0 5 0 6 6 1 5 0 5 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 0 6 6 1 0 6 5 1 6 6 1)) '1 '9999)
+(4 0 (5 0 5 0 6 6 1 0 6 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (5 0 5 0 6 6 1 0 6 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (5 0 0 6 6 6 1 5 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (5 0 0 6 6 6 1 5 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (6 1 1 7 6 6 1 5 4 4 0 5 0 2)) '1 '9999)
+(4 0 (6 1 1 7 6 6 1 5 4 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (6 1 1 6 6 6 1 5 4 4 0 0 6 2)) '1 '9999)
+(4 0 (6 1 1 6 6 6 1 5 4 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 0 6 6 6 1 5 4 0 1 6 6 2)) '1 '9999)
+(4 0 (5 0 0 6 6 6 1 5 4 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 0 6 6 6 1 5 0 5 1 6 6 1)) '1 '9999)
+(4 0 (5 0 0 6 6 6 1 5 0 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 0 6 6 6 1 0 5 5 1 6 6 1)) '1 '9999)
+(4 0 (5 0 0 6 6 6 1 0 5 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (5 0 0 6 6 6 1 0 5 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 1 6 6 6 6 0 4 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 1 6 6 6 6 0 4 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 2 7 7 6 6 0 4 4 4 0 5 0 2)) '1 '9999)
+(4 0 (1 2 7 7 6 6 0 4 4 4 0 5 0 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 2 7 6 6 6 0 4 4 4 0 0 6 2)) '1 '9999)
+(4 0 (1 2 7 6 6 6 0 4 4 4 0 0 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 6 6 6 0 4 4 0 1 6 6 2)) '1 '9999)
+(4 0 (0 1 6 6 6 6 0 4 4 0 1 6 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 6 6 6 0 4 0 5 1 6 6 1)) '1 '9999)
+(4 0 (0 1 6 6 6 6 0 4 0 5 1 6 6 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 6 6 6 0 0 5 5 1 6 5 1)) '1 '9999)
+(4 0 (0 1 6 6 6 6 0 0 5 5 1 6 5 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -1 (0 1 6 6 6 6 0 0 5 5 1 6 5 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> -1
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 0 5 5 5 5 0 4 4 0 5 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 5 0 1 5 5 1 6 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 5 0 1 5 5 1 6 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 6 5 0 1 5 5 1 6 5 0 2)) '1 '9999)
+(4 0 (5 1 6 6 5 0 1 5 5 1 6 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 1 5 5 1 6 0 6 2)) '1 '9999)
+(4 0 (5 1 6 5 5 0 1 5 5 1 6 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 1 5 5 1 0 6 6 2)) '1 '9999)
+(4 0 (5 1 6 5 5 0 1 5 5 1 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 5 0 1 5 5 0 7 5 5 1)) '1 '9999)
+(4 0 (4 0 5 5 5 0 1 5 5 0 7 5 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 5 0 1 5 0 2 7 6 6 2)) '1 '9999)
+(4 0 (4 0 5 5 5 0 1 5 0 2 7 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 5 0 1 0 6 2 7 6 6 1)) '1 '9999)
+(4 0 (4 0 5 5 5 0 1 0 6 2 7 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (4 0 5 5 5 0 1 0 6 2 7 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 0 6 1 5 5 1 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 0 6 1 5 5 1 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 6 0 6 1 5 5 1 5 5 0 2)) '1 '9999)
+(4 0 (5 1 6 6 0 6 1 5 5 1 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 0 6 1 5 5 1 5 0 6 2)) '1 '9999)
+(4 0 (5 1 6 5 0 6 1 5 5 1 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 0 6 1 5 5 1 0 6 6 2)) '1 '9999)
+(4 0 (5 1 5 5 0 6 1 5 5 1 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 0 6 1 5 5 0 6 5 5 1)) '1 '9999)
+(4 0 (4 0 5 5 0 6 1 5 5 0 6 5 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 0 6 1 5 0 2 6 6 6 2)) '1 '9999)
+(4 0 (4 0 5 5 0 6 1 5 0 2 6 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 0 6 1 0 6 2 6 6 6 1)) '1 '9999)
+(4 0 (4 0 5 5 0 6 1 0 6 2 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (4 0 5 5 0 6 1 0 6 2 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 0 6 6 1 5 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 0 6 6 1 5 5 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 1 6 6 1 5 5 0 5 5 0 2)) '1 '9999)
+(4 0 (5 1 6 1 6 6 1 5 5 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 0 6 6 1 5 5 0 5 0 6 2)) '1 '9999)
+(4 0 (5 1 6 0 6 6 1 5 5 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 0 6 6 1 5 5 0 0 6 6 2)) '1 '9999)
+(4 0 (5 1 5 0 6 6 1 5 5 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 0 6 6 1 5 0 1 6 6 6 2)) '1 '9999)
+(4 0 (4 0 5 0 6 6 1 5 0 1 6 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 0 6 6 1 0 6 1 6 6 6 1)) '1 '9999)
+(4 0 (4 0 5 0 6 6 1 0 6 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (4 0 5 0 6 6 1 0 6 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 0 6 6 6 1 5 4 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 0 6 6 6 1 5 4 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 1 7 6 6 1 5 4 0 5 5 0 2)) '1 '9999)
+(4 0 (5 1 1 7 6 6 1 5 4 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 1 6 6 6 1 5 4 0 5 0 6 2)) '1 '9999)
+(4 0 (5 1 1 6 6 6 1 5 4 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 0 6 6 6 1 5 4 0 0 6 6 2)) '1 '9999)
+(4 0 (5 1 0 6 6 6 1 5 4 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 0 6 6 6 1 5 0 1 6 6 6 1)) '1 '9999)
+(4 0 (4 0 0 6 6 6 1 5 0 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 0 6 6 6 1 0 5 1 6 6 6 1)) '1 '9999)
+(4 0 (4 0 0 6 6 6 1 0 5 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (4 0 0 6 6 6 1 0 5 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 1 6 6 6 5 0 4 4 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 1 6 6 6 5 0 4 4 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 2 7 7 6 5 0 4 4 0 5 5 0 2)) '1 '9999)
+(4 0 (1 2 7 7 6 5 0 4 4 0 5 5 0 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 2 7 6 6 5 0 4 4 0 5 0 6 2)) '1 '9999)
+(4 0 (1 2 7 6 6 5 0 4 4 0 5 0 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 2 6 6 6 5 0 4 4 0 0 6 6 2)) '1 '9999)
+(4 0 (1 2 6 6 6 5 0 4 4 0 0 6 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 6 6 5 0 4 0 1 6 6 6 1)) '1 '9999)
+(4 0 (0 1 6 6 6 5 0 4 0 1 6 6 6 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 6 6 5 0 0 5 1 6 6 5 1)) '1 '9999)
+(4 0 (0 1 6 6 6 5 0 0 5 1 6 6 5 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -1 (0 1 6 6 6 5 0 0 5 1 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> -1
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 0 5 5 5 5 0 4 0 5 5 5 5 0)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 5 0 1 5 1 6 6 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 5 0 1 5 1 6 6 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 6 5 0 1 5 1 6 6 5 0 1)) '1 '9999)
+(4 0 (5 1 6 6 5 0 1 5 1 6 6 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 1 5 1 6 6 0 6 1)) '1 '9999)
+(4 0 (5 1 6 5 5 0 1 5 1 6 6 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 1 5 1 6 0 6 6 1)) '1 '9999)
+(4 0 (5 1 6 5 5 0 1 5 1 6 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 5 0 1 5 1 0 7 6 6 1)) '1 '9999)
+(4 0 (5 1 5 5 5 0 1 5 1 0 7 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 5 0 1 5 0 7 6 5 5 0)) '1 '9999)
+(4 0 (4 0 5 5 5 0 1 5 0 7 6 5 5 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 5 0 1 0 2 7 7 6 6 0)) '1 '9999)
+(4 0 (4 0 5 5 5 0 1 0 2 7 7 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 0 5 5 5 0 1 0 2 7 7 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 0 6 1 5 1 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 0 6 1 5 1 6 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 6 0 6 1 5 1 6 5 5 0 1)) '1 '9999)
+(4 0 (5 1 6 6 0 6 1 5 1 6 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 0 6 1 5 1 6 5 0 6 1)) '1 '9999)
+(4 0 (5 1 6 5 0 6 1 5 1 6 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 0 6 1 5 1 6 0 6 6 1)) '1 '9999)
+(4 0 (5 1 5 5 0 6 1 5 1 6 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 0 6 1 5 1 0 6 6 6 1)) '1 '9999)
+(4 0 (5 1 5 5 0 6 1 5 1 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 0 6 1 5 0 7 5 5 5 0)) '1 '9999)
+(4 0 (4 0 5 5 0 6 1 5 0 7 5 5 5 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 0 6 1 0 2 7 6 6 6 0)) '1 '9999)
+(4 0 (4 0 5 5 0 6 1 0 2 7 6 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 0 5 5 0 6 1 0 2 7 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 0 6 6 1 5 1 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 0 6 6 1 5 1 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 1 6 6 1 5 1 5 5 5 0 1)) '1 '9999)
+(4 0 (5 1 6 1 6 6 1 5 1 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 0 6 6 1 5 1 5 5 0 6 1)) '1 '9999)
+(4 0 (5 1 6 0 6 6 1 5 1 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 0 6 6 1 5 1 5 0 6 6 1)) '1 '9999)
+(4 0 (5 1 5 0 6 6 1 5 1 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 0 6 6 1 5 1 0 6 6 6 1)) '1 '9999)
+(4 0 (5 0 5 0 6 6 1 5 1 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 0 6 6 1 5 0 6 5 5 5 0)) '1 '9999)
+(4 0 (4 0 5 0 6 6 1 5 0 6 5 5 5 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 0 6 6 1 0 2 6 6 6 6 0)) '1 '9999)
+(4 0 (4 0 5 0 6 6 1 0 2 6 6 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 0 5 0 6 6 1 0 2 6 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 0 6 6 6 1 5 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 0 6 6 6 1 5 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 1 7 6 6 1 5 0 5 5 5 0 1)) '1 '9999)
+(4 0 (5 1 1 7 6 6 1 5 0 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 1 6 6 6 1 5 0 5 5 0 6 1)) '1 '9999)
+(4 0 (5 1 1 6 6 6 1 5 0 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 0 6 6 6 1 5 0 5 0 6 6 1)) '1 '9999)
+(4 0 (5 1 0 6 6 6 1 5 0 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 0 6 6 6 1 5 0 0 6 6 6 1)) '1 '9999)
+(4 0 (5 0 0 6 6 6 1 5 0 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 0 6 6 6 1 0 1 6 6 6 6 0)) '1 '9999)
+(4 0 (4 0 0 6 6 6 1 0 1 6 6 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 0 0 6 6 6 1 0 1 6 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 1 6 6 6 5 0 4 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 1 6 6 6 5 0 4 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 2 7 7 6 5 0 4 0 5 5 5 0 1)) '1 '9999)
+(4 0 (1 2 7 7 6 5 0 4 0 5 5 5 0 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 2 7 6 6 5 0 4 0 5 5 0 6 1)) '1 '9999)
+(4 0 (1 2 7 6 6 5 0 4 0 5 5 0 6 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 2 6 6 6 5 0 4 0 5 0 6 6 1)) '1 '9999)
+(4 0 (1 2 6 6 6 5 0 4 0 5 0 6 6 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 1 6 6 6 5 0 4 0 0 6 6 6 1)) '1 '9999)
+(4 0 (1 1 6 6 6 5 0 4 0 0 6 6 6 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 6 6 5 0 0 1 6 6 6 5 0)) '1 '9999)
+(4 0 (0 1 6 6 6 5 0 0 1 6 6 6 5 0)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 1 6 6 6 5 0 0 1 6 6 6 5 0)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (4 0 5 5 5 5 0 0 5 5 5 5 4 0)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 5 0 1 1 6 6 6 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 5 0 1 1 6 6 6 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 1 1 6 6 6 5 0 1)) '1 '9999)
+(4 0 (5 1 6 5 5 0 1 1 6 6 6 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 1 1 6 6 6 0 5 1)) '1 '9999)
+(4 0 (5 1 6 5 5 0 1 1 6 6 6 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 5 0 1 1 6 6 0 6 5 1)) '1 '9999)
+(4 0 (5 1 6 5 5 0 1 1 6 6 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 5 0 1 1 6 0 7 6 5 1)) '1 '9999)
+(4 0 (5 1 5 5 5 0 1 1 6 0 7 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 5 0 1 1 0 7 7 6 5 1)) '1 '9999)
+(4 0 (5 0 5 5 5 0 1 1 0 7 7 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 5 0 1 0 7 6 6 5 4 0)) '1 '9999)
+(4 0 (4 0 5 5 5 0 1 0 7 6 6 5 4 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 0 5 5 5 0 1 0 7 6 6 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 5 0 6 1 1 6 6 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 5 0 6 1 1 6 6 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 0 6 1 1 6 6 5 5 0 1)) '1 '9999)
+(4 0 (5 1 6 5 0 6 1 1 6 6 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 5 0 6 1 1 6 6 5 0 5 1)) '1 '9999)
+(4 0 (5 1 6 5 0 6 1 1 6 6 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 0 6 1 1 6 6 0 6 5 1)) '1 '9999)
+(4 0 (5 1 5 5 0 6 1 1 6 6 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 5 0 6 1 1 6 0 6 6 5 1)) '1 '9999)
+(4 0 (5 1 5 5 0 6 1 1 6 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 5 0 6 1 1 0 7 6 6 5 1)) '1 '9999)
+(4 0 (5 0 5 5 0 6 1 1 0 7 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 5 0 6 1 0 7 6 5 5 4 0)) '1 '9999)
+(4 0 (4 0 5 5 0 6 1 0 7 6 5 5 4 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 0 5 5 0 6 1 0 7 6 5 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 5 0 6 6 1 1 6 5 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 5 0 6 6 1 1 6 5 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 0 6 6 1 1 6 5 5 5 0 1)) '1 '9999)
+(4 0 (5 1 6 0 6 6 1 1 6 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 6 0 6 6 1 1 6 5 5 0 5 1)) '1 '9999)
+(4 0 (5 1 6 0 6 6 1 1 6 5 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 5 0 6 6 1 1 6 5 0 6 5 1)) '1 '9999)
+(4 0 (5 1 5 0 6 6 1 1 6 5 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 0 6 6 1 1 6 0 6 6 5 1)) '1 '9999)
+(4 0 (5 0 5 0 6 6 1 1 6 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 5 0 6 6 1 1 0 6 6 6 5 1)) '1 '9999)
+(4 0 (5 0 5 0 6 6 1 1 0 6 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 5 0 6 6 1 0 7 5 5 5 4 0)) '1 '9999)
+(4 0 (4 0 5 0 6 6 1 0 7 5 5 5 4 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 0 5 0 6 6 1 0 7 5 5 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (4 0 0 6 6 6 1 1 5 5 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (4 0 0 6 6 6 1 1 5 5 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (5 1 1 6 6 6 1 1 5 5 5 5 0 1)) '1 '9999)
+(4 0 (5 1 1 6 6 6 1 1 5 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 1 6 6 6 1 1 5 5 5 0 5 1)) '1 '9999)
+(4 0 (5 1 1 6 6 6 1 1 5 5 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 1 0 6 6 6 1 1 5 5 0 6 5 1)) '1 '9999)
+(4 0 (5 1 0 6 6 6 1 1 5 5 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (5 0 0 6 6 6 1 1 5 0 6 6 5 1)) '1 '9999)
+(4 0 (5 0 0 6 6 6 1 1 5 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 0 6 6 6 1 1 0 6 6 6 5 1)) '1 '9999)
+(4 0 (4 0 0 6 6 6 1 1 0 6 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (4 0 0 6 6 6 1 0 6 5 5 5 4 0)) '1 '9999)
+(4 0 (4 0 0 6 6 6 1 0 6 5 5 5 4 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (4 0 0 6 6 6 1 0 6 5 5 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 1 6 6 6 5 0 0 5 5 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 1 6 6 6 5 0 0 5 5 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 2 7 6 6 5 0 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (1 2 7 6 6 5 0 0 5 5 5 5 0 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 2 7 6 6 5 0 0 5 5 5 0 5 1)) '1 '9999)
+(4 0 (1 2 7 6 6 5 0 0 5 5 5 0 5 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 2 6 6 6 5 0 0 5 5 0 6 5 1)) '1 '9999)
+(4 0 (1 2 6 6 6 5 0 0 5 5 0 6 5 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 1 6 6 6 5 0 0 5 0 6 6 5 1)) '1 '9999)
+(4 0 (1 1 6 6 6 5 0 0 5 0 6 6 5 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 1 6 6 6 5 0 0 0 6 6 6 5 1)) '1 '9999)
+(4 0 (0 1 6 6 6 5 0 0 0 6 6 6 5 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 0 (0 1 6 6 6 5 0 0 0 6 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+2. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 1 (0 1 6 6 6 5 0 0 0 6 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(1 0 (0 5 5 5 5 4 0 4 4 4 4 4 4 0)) 
+2. Trace: (MINI-VAL '(1 0 (0 5 5 5 5 4 0 4 4 4 4 4 4 0)) '1 '9999)
+3. Trace: (MAXI-VAL '(2 0 (1 6 6 5 5 4 0 4 4 4 4 4 0 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (1 6 6 5 5 0 1 5 5 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 6 6 5 5 0 1 5 5 5 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 7 6 5 5 0 1 5 5 5 4 0 1 2)) '1 '9999)
+(4 0 (2 7 6 5 5 0 1 5 5 5 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 5 5 0 1 5 5 5 0 5 1 2)) '1 '9999)
+(4 0 (2 6 6 5 5 0 1 5 5 5 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 5 5 0 1 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (2 6 6 5 5 0 1 5 5 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 1 5 0 6 5 5 1 2)) '1 '9999)
+(4 0 (1 6 6 5 5 0 1 5 0 6 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 5 5 0 1 0 6 6 5 5 0 3)) '1 '9999)
+(4 0 (0 6 6 5 5 0 1 0 6 6 5 5 0 3)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -2 (0 6 6 5 5 0 1 0 6 6 5 5 0 3)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 6 6 5 0 5 1 5 5 5 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 6 6 5 0 5 1 5 5 5 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 7 6 5 0 5 1 5 5 5 4 0 1 2)) '1 '9999)
+(4 0 (2 7 6 5 0 5 1 5 5 5 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 5 0 5 1 5 5 5 0 5 1 2)) '1 '9999)
+(4 0 (2 6 6 5 0 5 1 5 5 5 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 5 0 5 1 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (2 6 6 5 0 5 1 5 5 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 0 5 1 5 0 6 5 5 1 2)) '1 '9999)
+(4 0 (1 6 6 5 0 5 1 5 0 6 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 5 0 5 1 0 6 6 5 5 0 3)) '1 '9999)
+(4 0 (0 6 6 5 0 5 1 0 6 6 5 5 0 3)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -2 (0 6 6 5 0 5 1 0 6 6 5 5 0 3)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 6 6 0 6 5 1 5 5 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 6 6 0 6 5 1 5 5 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 7 6 0 6 5 1 5 5 4 4 0 1 2)) '1 '9999)
+(4 0 (2 7 6 0 6 5 1 5 5 4 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 0 6 5 1 5 5 4 0 5 1 2)) '1 '9999)
+(4 0 (2 6 6 0 6 5 1 5 5 4 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 0 6 5 1 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (1 6 6 0 6 5 1 5 5 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 0 6 5 1 5 0 5 5 5 1 2)) '1 '9999)
+(4 0 (1 6 6 0 6 5 1 5 0 5 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 6 0 6 5 1 0 6 5 5 5 0 3)) '1 '9999)
+(4 0 (0 6 6 0 6 5 1 0 6 5 5 5 0 3)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -2 (0 6 6 0 6 5 1 0 6 5 5 5 0 3)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 6 0 6 6 5 1 5 5 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 6 0 6 6 5 1 5 5 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 7 0 6 6 5 1 5 5 4 4 0 1 2)) '1 '9999)
+(4 0 (2 7 0 6 6 5 1 5 5 4 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 0 6 6 5 1 5 5 4 0 5 1 2)) '1 '9999)
+(4 0 (2 6 0 6 6 5 1 5 5 4 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 0 6 6 5 1 5 5 0 5 5 1 2)) '1 '9999)
+(4 0 (1 6 0 6 6 5 1 5 5 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 0 6 6 5 1 5 0 5 5 5 1 2)) '1 '9999)
+(4 0 (1 6 0 6 6 5 1 5 0 5 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 0 6 6 5 1 0 6 5 5 5 0 3)) '1 '9999)
+(4 0 (0 6 0 6 6 5 1 0 6 5 5 5 0 3)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -2 (0 6 0 6 6 5 1 0 6 5 5 5 0 3)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 0 7 6 6 5 1 5 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 0 7 6 6 5 1 5 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 1 7 6 6 5 1 5 4 4 4 0 1 2)) '1 '9999)
+(4 0 (2 1 7 6 6 5 1 5 4 4 4 0 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 0 7 6 6 5 1 5 4 4 0 5 1 2)) '1 '9999)
+(4 0 (2 0 7 6 6 5 1 5 4 4 0 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 0 7 6 6 5 1 5 4 0 5 5 1 2)) '1 '9999)
+(4 0 (1 0 7 6 6 5 1 5 4 0 5 5 1 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 7 6 6 5 1 5 0 5 5 5 0 3)) '1 '9999)
+(4 0 (0 0 7 6 6 5 1 5 0 5 5 5 0 3)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 7 6 6 5 1 0 5 5 5 5 0 3)) '1 '9999)
+(4 0 (0 0 7 6 6 5 1 0 5 5 5 5 0 3)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -2 (0 0 7 6 6 5 1 0 5 5 5 5 0 3)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 7 6 5 5 4 0 4 4 4 4 4 0 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 7 6 5 5 4 0 4 4 4 4 4 0 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 8 6 5 5 4 0 4 4 4 4 0 1 2)) '1 '9999)
+(4 0 (1 8 6 5 5 4 0 4 4 4 4 0 1 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 7 6 5 5 4 0 4 4 4 0 5 1 2)) '1 '9999)
+(4 0 (1 7 6 5 5 4 0 4 4 4 0 5 1 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 7 6 5 5 4 0 4 4 0 5 5 1 2)) '1 '9999)
+(4 0 (0 7 6 5 5 4 0 4 4 0 5 5 1 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 7 6 5 5 4 0 4 0 5 5 5 0 2)) '1 '9999)
+(4 0 (0 7 6 5 5 4 0 4 0 5 5 5 0 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 7 6 5 5 4 0 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (0 7 6 5 5 4 0 0 5 5 5 5 0 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -2 (0 7 6 5 5 4 0 0 5 5 5 5 0 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> -2
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (1 6 5 5 5 4 0 4 4 4 4 0 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (1 6 5 5 5 0 1 5 5 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 6 5 5 5 0 1 5 5 5 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 7 6 6 5 0 1 5 5 5 4 0 0 2)) '1 '9999)
+(4 0 (2 7 6 6 5 0 1 5 5 5 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 5 5 5 0 1 5 5 5 0 1 6 2)) '1 '9999)
+(4 0 (2 6 5 5 5 0 1 5 5 5 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 5 5 5 0 1 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (2 6 5 5 5 0 1 5 5 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 5 0 6 5 1 6 2)) '1 '9999)
+(4 0 (1 6 5 5 5 0 1 5 0 6 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 0 6 6 5 1 6 1)) '1 '9999)
+(4 0 (1 6 5 5 5 0 1 0 6 6 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 6 5 5 5 0 1 0 6 6 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 6 5 5 0 5 1 5 5 5 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 6 5 5 0 5 1 5 5 5 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 7 6 6 0 5 1 5 5 5 4 0 0 2)) '1 '9999)
+(4 0 (2 7 6 6 0 5 1 5 5 5 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 5 5 0 5 1 5 5 5 0 1 6 2)) '1 '9999)
+(4 0 (2 6 5 5 0 5 1 5 5 5 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 5 5 0 5 1 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (2 6 5 5 0 5 1 5 5 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 1 5 0 6 5 1 6 2)) '1 '9999)
+(4 0 (1 6 5 5 0 5 1 5 0 6 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 1 0 6 6 5 1 6 1)) '1 '9999)
+(4 0 (1 6 5 5 0 5 1 0 6 6 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 6 5 5 0 5 1 0 6 6 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 6 5 0 6 5 1 5 5 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 6 5 0 6 5 1 5 5 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 7 6 1 6 5 1 5 5 4 4 0 0 2)) '1 '9999)
+(4 0 (2 7 6 1 6 5 1 5 5 4 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 5 0 6 5 1 5 5 4 0 1 6 2)) '1 '9999)
+(4 0 (2 6 5 0 6 5 1 5 5 4 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 0 6 5 1 5 5 0 5 1 6 2)) '1 '9999)
+(4 0 (1 6 5 0 6 5 1 5 5 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 0 6 5 1 5 0 5 5 1 6 2)) '1 '9999)
+(4 0 (1 6 5 0 6 5 1 5 0 5 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 0 6 5 1 0 6 5 5 1 6 1)) '1 '9999)
+(4 0 (1 6 5 0 6 5 1 0 6 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 6 5 0 6 5 1 0 6 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 6 0 6 6 5 1 5 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 6 0 6 6 5 1 5 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 7 1 7 6 5 1 5 4 4 4 0 0 2)) '1 '9999)
+(4 0 (2 7 1 7 6 5 1 5 4 4 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 0 6 6 5 1 5 4 4 0 1 6 2)) '1 '9999)
+(4 0 (2 6 0 6 6 5 1 5 4 4 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 0 6 6 5 1 5 4 0 5 1 6 2)) '1 '9999)
+(4 0 (1 6 0 6 6 5 1 5 4 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 0 6 6 5 1 5 0 5 5 1 6 1)) '1 '9999)
+(4 0 (1 6 0 6 6 5 1 5 0 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 0 6 6 5 1 0 5 5 5 1 6 1)) '1 '9999)
+(4 0 (1 6 0 6 6 5 1 0 5 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 6 0 6 6 5 1 0 5 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 0 6 6 6 5 1 5 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 0 6 6 6 5 1 5 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 1 7 7 6 5 1 5 4 4 4 0 0 2)) '1 '9999)
+(4 0 (2 1 7 7 6 5 1 5 4 4 4 0 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 0 6 6 6 5 1 5 4 4 0 1 6 2)) '1 '9999)
+(4 0 (2 0 6 6 6 5 1 5 4 4 0 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 0 6 6 6 5 1 5 4 0 5 1 6 2)) '1 '9999)
+(4 0 (1 0 6 6 6 5 1 5 4 0 5 1 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 0 6 6 6 5 1 5 0 5 5 1 6 1)) '1 '9999)
+(4 0 (1 0 6 6 6 5 1 5 0 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 0 6 6 6 5 1 0 5 5 5 1 6 1)) '1 '9999)
+(4 0 (1 0 6 6 6 5 1 0 5 5 5 1 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 0 6 6 6 5 1 0 5 5 5 1 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 7 5 5 5 4 0 4 4 4 4 0 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 7 5 5 5 4 0 4 4 4 4 0 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 8 6 6 5 4 0 4 4 4 4 0 0 2)) '1 '9999)
+(4 0 (1 8 6 6 5 4 0 4 4 4 4 0 0 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 7 5 5 5 4 0 4 4 4 0 1 6 2)) '1 '9999)
+(4 0 (1 7 5 5 5 4 0 4 4 4 0 1 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 7 5 5 5 4 0 4 4 0 5 1 6 2)) '1 '9999)
+(4 0 (0 7 5 5 5 4 0 4 4 0 5 1 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 7 5 5 5 4 0 4 0 5 5 1 6 1)) '1 '9999)
+(4 0 (0 7 5 5 5 4 0 4 0 5 5 1 6 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 5 5 5 4 0 0 5 5 5 0 5 9)) '1 '9999)
+(4 0 (0 0 5 5 5 4 0 0 5 5 5 0 5 9)) 
+UTILIDAD 
+-9 
+5. Trace: MAXI-VAL ==> -9
+NIL 
+4. Trace: MINI-VAL ==> -9
+NODO-MAXI-DESPUES 
+(4 -1 (0 0 5 5 5 4 0 0 5 5 5 0 5 9)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> -1
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (1 5 5 5 5 4 0 4 4 4 0 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (1 5 5 5 5 0 1 5 5 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 5 5 5 5 0 1 5 5 5 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 6 5 0 1 5 5 5 0 5 0 2)) '1 '9999)
+(4 0 (2 6 6 6 5 0 1 5 5 5 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 5 5 0 1 5 5 5 0 0 6 2)) '1 '9999)
+(4 0 (2 6 6 5 5 0 1 5 5 5 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 5 5 5 5 0 1 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (2 5 5 5 5 0 1 5 5 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 5 0 1 5 0 6 1 6 6 2)) '1 '9999)
+(4 0 (1 5 5 5 5 0 1 5 0 6 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 5 0 1 0 6 6 1 6 6 1)) '1 '9999)
+(4 0 (1 5 5 5 5 0 1 0 6 6 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 5 5 5 5 0 1 0 6 6 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 5 5 5 0 5 1 5 5 5 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 5 5 5 0 5 1 5 5 5 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 6 0 5 1 5 5 5 0 5 0 2)) '1 '9999)
+(4 0 (2 6 6 6 0 5 1 5 5 5 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 5 0 5 1 5 5 5 0 0 6 2)) '1 '9999)
+(4 0 (2 6 6 5 0 5 1 5 5 5 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 5 5 5 0 5 1 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (2 5 5 5 0 5 1 5 5 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 0 5 1 5 0 6 1 6 6 2)) '1 '9999)
+(4 0 (1 5 5 5 0 5 1 5 0 6 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 0 5 1 0 6 6 1 6 6 1)) '1 '9999)
+(4 0 (1 5 5 5 0 5 1 0 6 6 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 5 5 5 0 5 1 0 6 6 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 5 5 0 6 5 1 5 5 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 5 5 0 6 5 1 5 5 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 1 6 5 1 5 5 4 0 5 0 2)) '1 '9999)
+(4 0 (2 6 6 1 6 5 1 5 5 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 6 0 6 5 1 5 5 4 0 0 6 2)) '1 '9999)
+(4 0 (2 6 6 0 6 5 1 5 5 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 0 6 5 1 5 5 0 1 6 6 2)) '1 '9999)
+(4 0 (1 5 5 0 6 5 1 5 5 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 0 6 5 1 5 0 5 1 6 6 2)) '1 '9999)
+(4 0 (1 5 5 0 6 5 1 5 0 5 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 0 6 5 1 0 6 5 1 6 6 1)) '1 '9999)
+(4 0 (1 5 5 0 6 5 1 0 6 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 5 5 0 6 5 1 0 6 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 5 0 6 6 5 1 5 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 5 0 6 6 5 1 5 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 6 1 7 6 5 1 5 4 4 0 5 0 2)) '1 '9999)
+(4 0 (2 6 1 7 6 5 1 5 4 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 6 1 6 6 5 1 5 4 4 0 0 6 2)) '1 '9999)
+(4 0 (2 6 1 6 6 5 1 5 4 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 0 6 6 5 1 5 4 0 1 6 6 2)) '1 '9999)
+(4 0 (1 5 0 6 6 5 1 5 4 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 0 6 6 5 1 5 0 5 1 6 6 1)) '1 '9999)
+(4 0 (1 5 0 6 6 5 1 5 0 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 0 6 6 5 1 0 5 5 1 6 6 1)) '1 '9999)
+(4 0 (1 5 0 6 6 5 1 0 5 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 5 0 6 6 5 1 0 5 5 1 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (1 0 6 6 6 5 1 4 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (1 0 6 6 6 5 1 4 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (2 1 7 7 6 5 1 4 4 4 0 5 0 2)) '1 '9999)
+(4 0 (2 1 7 7 6 5 1 4 4 4 0 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (2 1 7 6 6 5 1 4 4 4 0 0 6 2)) '1 '9999)
+(4 0 (2 1 7 6 6 5 1 4 4 4 0 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 0 6 6 6 5 1 4 4 0 1 6 6 2)) '1 '9999)
+(4 0 (1 0 6 6 6 5 1 4 4 0 1 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 0 6 6 6 5 1 4 0 5 1 6 6 1)) '1 '9999)
+(4 0 (1 0 6 6 6 5 1 4 0 5 1 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 0 6 6 6 5 1 0 5 5 1 6 5 1)) '1 '9999)
+(4 0 (1 0 6 6 6 5 1 0 5 5 1 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (1 0 6 6 6 5 1 0 5 5 1 6 5 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 6 5 5 5 4 0 4 4 4 0 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 6 5 5 5 4 0 4 4 4 0 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 7 6 6 5 4 0 4 4 4 0 5 0 2)) '1 '9999)
+(4 0 (1 7 6 6 5 4 0 4 4 4 0 5 0 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 7 6 5 5 4 0 4 4 4 0 0 6 2)) '1 '9999)
+(4 0 (1 7 6 5 5 4 0 4 4 4 0 0 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 5 5 4 0 4 4 0 1 6 6 2)) '1 '9999)
+(4 0 (0 6 5 5 5 4 0 4 4 0 1 6 6 2)) 
+UTILIDAD 
+-2 
+5. Trace: MAXI-VAL ==> -2
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 5 5 4 0 4 0 5 1 6 6 1)) '1 '9999)
+(4 0 (0 6 5 5 5 4 0 4 0 5 1 6 6 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 6 5 5 5 4 0 0 5 5 1 6 5 1)) '1 '9999)
+(4 0 (0 6 5 5 5 4 0 0 5 5 1 6 5 1)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+4. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 -1 (0 6 5 5 5 4 0 0 5 5 1 6 5 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> -1
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (0 5 5 5 5 4 0 4 4 0 5 5 5 1)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 5 0 1 5 5 1 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 5 0 1 5 5 1 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 5 0 1 5 5 1 5 5 0 2)) '1 '9999)
+(4 0 (1 6 6 6 5 0 1 5 5 1 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 1 5 5 1 5 0 6 2)) '1 '9999)
+(4 0 (1 6 6 5 5 0 1 5 5 1 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 5 5 1 0 6 6 2)) '1 '9999)
+(4 0 (1 6 5 5 5 0 1 5 5 1 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 5 0 1 5 5 0 6 5 5 1)) '1 '9999)
+(4 0 (0 5 5 5 5 0 1 5 5 0 6 5 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 5 0 1 5 0 2 6 6 6 2)) '1 '9999)
+(4 0 (0 5 5 5 5 0 1 5 0 2 6 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 5 0 1 0 6 2 6 6 6 1)) '1 '9999)
+(4 0 (0 5 5 5 5 0 1 0 6 2 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (0 5 5 5 5 0 1 0 6 2 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 0 5 1 5 5 1 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 0 5 1 5 5 1 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 0 5 1 5 5 1 5 5 0 2)) '1 '9999)
+(4 0 (1 6 6 6 0 5 1 5 5 1 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 0 5 1 5 5 1 5 0 6 2)) '1 '9999)
+(4 0 (1 6 6 5 0 5 1 5 5 1 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 1 5 5 1 0 6 6 2)) '1 '9999)
+(4 0 (1 6 5 5 0 5 1 5 5 1 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 0 5 1 5 5 0 6 5 5 1)) '1 '9999)
+(4 0 (0 5 5 5 0 5 1 5 5 0 6 5 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 0 5 1 5 0 2 6 6 6 2)) '1 '9999)
+(4 0 (0 5 5 5 0 5 1 5 0 2 6 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 0 5 1 0 6 2 6 6 6 1)) '1 '9999)
+(4 0 (0 5 5 5 0 5 1 0 6 2 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (0 5 5 5 0 5 1 0 6 2 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 0 6 5 1 5 5 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 0 6 5 1 5 5 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 1 6 5 1 5 5 0 5 5 0 2)) '1 '9999)
+(4 0 (1 6 6 1 6 5 1 5 5 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 0 6 5 1 5 5 0 5 0 6 2)) '1 '9999)
+(4 0 (1 6 6 0 6 5 1 5 5 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 0 6 5 1 5 5 0 0 6 6 2)) '1 '9999)
+(4 0 (1 6 5 0 6 5 1 5 5 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 0 6 5 1 5 0 1 6 6 6 2)) '1 '9999)
+(4 0 (0 5 5 0 6 5 1 5 0 1 6 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 0 6 5 1 0 6 1 6 6 6 1)) '1 '9999)
+(4 0 (0 5 5 0 6 5 1 0 6 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (0 5 5 0 6 5 1 0 6 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 0 6 6 5 1 5 4 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 0 6 6 5 1 5 4 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 7 6 5 1 5 4 0 5 5 0 2)) '1 '9999)
+(4 0 (1 6 1 7 6 5 1 5 4 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 6 6 5 1 5 4 0 5 0 6 2)) '1 '9999)
+(4 0 (1 6 1 6 6 5 1 5 4 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 0 6 6 5 1 5 4 0 0 6 6 2)) '1 '9999)
+(4 0 (1 6 0 6 6 5 1 5 4 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 0 6 6 5 1 5 0 1 6 6 6 1)) '1 '9999)
+(4 0 (0 5 0 6 6 5 1 5 0 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 0 6 6 5 1 0 5 1 6 6 6 1)) '1 '9999)
+(4 0 (0 5 0 6 6 5 1 0 5 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (0 5 0 6 6 5 1 0 5 1 6 6 6 1)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 0 6 6 6 5 1 4 4 0 5 5 5 1)) 
+4. Trace: (MINI-VAL '(3 0 (0 0 6 6 6 5 1 4 4 0 5 5 5 1)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 1 7 7 6 5 1 4 4 0 5 5 0 2)) '1 '9999)
+(4 0 (1 1 7 7 6 5 1 4 4 0 5 5 0 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 1 7 6 6 5 1 4 4 0 5 0 6 2)) '1 '9999)
+(4 0 (1 1 7 6 6 5 1 4 4 0 5 0 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 1 6 6 6 5 1 4 4 0 0 6 6 2)) '1 '9999)
+(4 0 (1 1 6 6 6 5 1 4 4 0 0 6 6 2)) 
+UTILIDAD 
+-1 
+5. Trace: MAXI-VAL ==> -1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 6 6 6 5 1 4 0 1 6 6 6 1)) '1 '9999)
+(4 0 (0 0 6 6 6 5 1 4 0 1 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 6 6 6 5 1 0 5 1 6 6 5 1)) '1 '9999)
+(4 0 (0 0 6 6 6 5 1 0 5 1 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> -1
+NODO-MAXI-DESPUES 
+(4 -1 (0 0 6 6 6 5 1 0 5 1 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> -1
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (0 5 5 5 5 4 0 4 0 5 5 5 5 0)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 5 0 1 5 1 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 5 0 1 5 1 6 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 5 0 1 5 1 6 5 5 0 1)) '1 '9999)
+(4 0 (1 6 6 6 5 0 1 5 1 6 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 1 5 1 6 5 0 6 1)) '1 '9999)
+(4 0 (1 6 6 5 5 0 1 5 1 6 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 5 1 6 0 6 6 1)) '1 '9999)
+(4 0 (1 6 5 5 5 0 1 5 1 6 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 5 1 0 6 6 6 1)) '1 '9999)
+(4 0 (1 6 5 5 5 0 1 5 1 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 5 0 1 5 0 7 5 5 5 0)) '1 '9999)
+(4 0 (0 5 5 5 5 0 1 5 0 7 5 5 5 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 5 0 1 0 2 7 6 6 6 0)) '1 '9999)
+(4 0 (0 5 5 5 5 0 1 0 2 7 6 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 5 5 0 1 0 2 7 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 0 5 1 5 1 6 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 0 5 1 5 1 6 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 6 0 5 1 5 1 6 5 5 0 1)) '1 '9999)
+(4 0 (1 6 6 6 0 5 1 5 1 6 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 0 5 1 5 1 6 5 0 6 1)) '1 '9999)
+(4 0 (1 6 6 5 0 5 1 5 1 6 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 1 5 1 6 0 6 6 1)) '1 '9999)
+(4 0 (1 6 5 5 0 5 1 5 1 6 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 1 5 1 0 6 6 6 1)) '1 '9999)
+(4 0 (1 6 5 5 0 5 1 5 1 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 0 5 1 5 0 7 5 5 5 0)) '1 '9999)
+(4 0 (0 5 5 5 0 5 1 5 0 7 5 5 5 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 0 5 1 0 2 7 6 6 6 0)) '1 '9999)
+(4 0 (0 5 5 5 0 5 1 0 2 7 6 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 5 0 5 1 0 2 7 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 0 6 5 1 5 1 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 0 6 5 1 5 1 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 1 6 5 1 5 1 5 5 5 0 1)) '1 '9999)
+(4 0 (1 6 6 1 6 5 1 5 1 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 0 6 5 1 5 1 5 5 0 6 1)) '1 '9999)
+(4 0 (1 6 6 0 6 5 1 5 1 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 0 6 5 1 5 1 5 0 6 6 1)) '1 '9999)
+(4 0 (1 6 5 0 6 5 1 5 1 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 0 6 5 1 5 1 0 6 6 6 1)) '1 '9999)
+(4 0 (1 5 5 0 6 5 1 5 1 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 0 6 5 1 5 0 6 5 5 5 0)) '1 '9999)
+(4 0 (0 5 5 0 6 5 1 5 0 6 5 5 5 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 0 6 5 1 0 2 6 6 6 6 0)) '1 '9999)
+(4 0 (0 5 5 0 6 5 1 0 2 6 6 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 0 6 5 1 0 2 6 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 0 6 6 5 1 5 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 0 6 6 5 1 5 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 7 6 5 1 5 0 5 5 5 0 1)) '1 '9999)
+(4 0 (1 6 1 7 6 5 1 5 0 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 6 6 5 1 5 0 5 5 0 6 1)) '1 '9999)
+(4 0 (1 6 1 6 6 5 1 5 0 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 0 6 6 5 1 5 0 5 0 6 6 1)) '1 '9999)
+(4 0 (1 6 0 6 6 5 1 5 0 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 0 6 6 5 1 5 0 0 6 6 6 1)) '1 '9999)
+(4 0 (1 5 0 6 6 5 1 5 0 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 0 6 6 5 1 0 1 6 6 6 6 0)) '1 '9999)
+(4 0 (0 5 0 6 6 5 1 0 1 6 6 6 6 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 5 0 6 6 5 1 0 1 6 6 6 6 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 0 6 6 6 5 1 4 0 5 5 5 5 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 0 6 6 6 5 1 4 0 5 5 5 5 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 1 7 7 6 5 1 4 0 5 5 5 0 1)) '1 '9999)
+(4 0 (1 1 7 7 6 5 1 4 0 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 1 7 6 6 5 1 4 0 5 5 0 6 1)) '1 '9999)
+(4 0 (1 1 7 6 6 5 1 4 0 5 5 0 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 1 6 6 6 5 1 4 0 5 0 6 6 1)) '1 '9999)
+(4 0 (1 1 6 6 6 5 1 4 0 5 0 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 0 6 6 6 5 1 4 0 0 6 6 6 1)) '1 '9999)
+(4 0 (1 0 6 6 6 5 1 4 0 0 6 6 6 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 6 6 6 5 1 0 1 6 6 6 5 0)) '1 '9999)
+(4 0 (0 0 6 6 6 5 1 0 1 6 6 6 5 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 0 6 6 6 5 1 0 1 6 6 6 5 0)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+3. Trace: (MAXI-VAL '(2 0 (0 5 5 5 5 4 0 0 5 5 5 5 4 0)) '1 '9999)
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 5 0 1 1 6 6 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 5 0 1 1 6 6 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 1 1 6 6 5 5 0 1)) '1 '9999)
+(4 0 (1 6 6 5 5 0 1 1 6 6 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 5 0 1 1 6 6 5 0 5 1)) '1 '9999)
+(4 0 (1 6 6 5 5 0 1 1 6 6 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 1 6 6 0 6 5 1)) '1 '9999)
+(4 0 (1 6 5 5 5 0 1 1 6 6 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 5 0 1 1 6 0 6 6 5 1)) '1 '9999)
+(4 0 (1 6 5 5 5 0 1 1 6 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 5 0 1 1 0 7 6 6 5 1)) '1 '9999)
+(4 0 (1 5 5 5 5 0 1 1 0 7 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 5 0 1 0 7 6 5 5 4 0)) '1 '9999)
+(4 0 (0 5 5 5 5 0 1 0 7 6 5 5 4 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 5 5 0 1 0 7 6 5 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 5 0 5 1 1 6 6 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 5 0 5 1 1 6 6 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 0 5 1 1 6 6 5 5 0 1)) '1 '9999)
+(4 0 (1 6 6 5 0 5 1 1 6 6 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 5 0 5 1 1 6 6 5 0 5 1)) '1 '9999)
+(4 0 (1 6 6 5 0 5 1 1 6 6 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 1 1 6 6 0 6 5 1)) '1 '9999)
+(4 0 (1 6 5 5 0 5 1 1 6 6 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 5 0 5 1 1 6 0 6 6 5 1)) '1 '9999)
+(4 0 (1 6 5 5 0 5 1 1 6 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 5 0 5 1 1 0 7 6 6 5 1)) '1 '9999)
+(4 0 (1 5 5 5 0 5 1 1 0 7 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 5 0 5 1 0 7 6 5 5 4 0)) '1 '9999)
+(4 0 (0 5 5 5 0 5 1 0 7 6 5 5 4 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 5 0 5 1 0 7 6 5 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 5 0 6 5 1 1 6 5 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 5 0 6 5 1 1 6 5 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 0 6 5 1 1 6 5 5 5 0 1)) '1 '9999)
+(4 0 (1 6 6 0 6 5 1 1 6 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 6 0 6 5 1 1 6 5 5 0 5 1)) '1 '9999)
+(4 0 (1 6 6 0 6 5 1 1 6 5 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 5 0 6 5 1 1 6 5 0 6 5 1)) '1 '9999)
+(4 0 (1 6 5 0 6 5 1 1 6 5 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 0 6 5 1 1 6 0 6 6 5 1)) '1 '9999)
+(4 0 (1 5 5 0 6 5 1 1 6 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 5 0 6 5 1 1 0 6 6 6 5 1)) '1 '9999)
+(4 0 (1 5 5 0 6 5 1 1 0 6 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 5 0 6 5 1 0 7 5 5 5 4 0)) '1 '9999)
+(4 0 (0 5 5 0 6 5 1 0 7 5 5 5 4 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 5 5 0 6 5 1 0 7 5 5 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 5 0 6 6 5 1 1 5 5 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 5 0 6 6 5 1 1 5 5 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 6 6 5 1 1 5 5 5 5 0 1)) '1 '9999)
+(4 0 (1 6 1 6 6 5 1 1 5 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 1 6 6 5 1 1 5 5 5 0 5 1)) '1 '9999)
+(4 0 (1 6 1 6 6 5 1 1 5 5 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 6 0 6 6 5 1 1 5 5 0 6 5 1)) '1 '9999)
+(4 0 (1 6 0 6 6 5 1 1 5 5 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 5 0 6 6 5 1 1 5 0 6 6 5 1)) '1 '9999)
+(4 0 (1 5 0 6 6 5 1 1 5 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 0 6 6 5 1 1 0 6 6 6 5 1)) '1 '9999)
+(4 0 (0 5 0 6 6 5 1 1 0 6 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 5 0 6 6 5 1 0 6 5 5 5 4 0)) '1 '9999)
+(4 0 (0 5 0 6 6 5 1 0 6 5 5 5 4 0)) 
+UTILIDAD 
+1 
+5. Trace: MAXI-VAL ==> 1
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 5 0 6 6 5 1 0 6 5 5 5 4 0)) 
+POSIBILIDADES 
+NIL 
+NODO-MAXI-ANTES 
+(3 0 (0 0 6 6 6 5 1 0 5 5 5 5 4 0)) 
+4. Trace: (MINI-VAL '(3 0 (0 0 6 6 6 5 1 0 5 5 5 5 4 0)) '1 '9999)
+5. Trace: (MAXI-VAL '(4 0 (1 1 7 6 6 5 1 0 5 5 5 5 0 1)) '1 '9999)
+(4 0 (1 1 7 6 6 5 1 0 5 5 5 5 0 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 1 7 6 6 5 1 0 5 5 5 0 5 1)) '1 '9999)
+(4 0 (1 1 7 6 6 5 1 0 5 5 5 0 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 1 6 6 6 5 1 0 5 5 0 6 5 1)) '1 '9999)
+(4 0 (1 1 6 6 6 5 1 0 5 5 0 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (1 0 6 6 6 5 1 0 5 0 6 6 5 1)) '1 '9999)
+(4 0 (1 0 6 6 6 5 1 0 5 0 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+5. Trace: (MAXI-VAL '(4 0 (0 0 6 6 6 5 1 0 0 6 6 6 5 1)) '1 '9999)
+(4 0 (0 0 6 6 6 5 1 0 0 6 6 6 5 1)) 
+UTILIDAD 
+0 
+5. Trace: MAXI-VAL ==> 0
+NIL 
+4. Trace: MINI-VAL ==> 0
+NODO-MAXI-DESPUES 
+(4 0 (0 0 6 6 6 5 1 0 0 6 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+3. Trace: MAXI-VAL ==> 0
+NIL 
+2. Trace: MINI-VAL ==> -2
+NODO-MAXI-DESPUES 
+(4 1 (0 0 6 6 6 5 1 0 0 6 6 6 5 1)) 
+POSIBILIDADES 
+NIL 
+1. Trace: MAXI-VAL ==> 1
+YA-CASI 
+NIL 
+ERROR 
+ERROR 

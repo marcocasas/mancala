@@ -2,7 +2,6 @@
 ;(nivel utilidad (11 12 13 14 15 16 P1 21 22 23 24 25 26 P2))
 
 ;Hola. Checando.
-(print 'hola)
 
 ;Metodo para obtener la dificultad del juego seleccionada.
 (setq d '())
@@ -37,25 +36,28 @@
 		(T
 			(setq v -9999)
 			(setq acciones (acciones-disp estado))
-			(print 'acciones-disp-maxi)
-			(print acciones)
-			(loop
-				(when (eql acciones NIL) (return v))
-				(setq accion (pop acciones))
-				(setq nodo (resultado accion (car estado)))
-				;(print v)
-				(setq v (max v (mini-val nodo alfa beta)))
-				;(print v)
-				(rplaca (nthcdr 1 nodo) v)
-				(print 'nodo)
-				(print nodo)
-				(if (= (car nodo) 1) (push nodo posibilidades))
-				(cond
-					((>= v beta) v)
-					(T (setq alfa (max alfa v)))
+			(let ((tableros-disponibles acciones))
+				(loop
+					(when (eql tableros-disponibles NIL) (return v))
+					(setq accion (pop tableros-disponibles))
+					(setq nodo (resultado accion (car estado)))
+					(print 'nodo-maxi-antes)
+					(print nodo)
+					;(print v)
+					(setq v (max v (mini-val nodo alfa beta)))
+					;(print v)
+					(rplaca (nthcdr 1 nodo) v)
+					(print 'nodo-maxi-despues)
+					(print nodo)
+					(if (= (car nodo) 1) (push nodo posibilidades))
+					(print 'posibilidades)
+					(print posibilidades)
+					(cond
+						((>= v beta) v)
+						(T (setq alfa (max alfa v)))
+					)
 				)
 			)
-
 			(return-from maxi-val v)
 		)
 	)
@@ -67,18 +69,19 @@
 		(T
 			(setq v 9999)
 			(setq acciones (acciones-disp (gira-estado estado)))
-			(print 'acciones-disp-mini)
-			(print acciones)
-			(loop
-				(when (eql acciones NIL) (return v))
-				(setq accion (gira-tablero (pop acciones))) ;;
-				(setq nodo (resultado accion (car estado)))
-				(setq v (min v (maxi-val nodo alfa beta)))
-				(rplaca (nthcdr 1 nodo) v)
-				(if (= (car nodo) 1) (push nodo posibilidades))
-				(cond
-					((<= v alfa) v)
-					(T (setq beta (min beta v)))
+			(let ((tableros-disponibles acciones))
+				(loop
+					(when (eql tableros-disponibles NIL) (return v))
+					(setq accion (gira-tablero (pop tableros-disponibles))) ;;
+					(setq nodo (resultado accion (car estado)))
+					(setq v (min v (maxi-val nodo alfa beta)))
+					(rplaca (nthcdr 1 nodo) v)
+					(if (= (car nodo) 1) (push nodo posibilidades))
+					(print posibilidades)
+					(cond
+						((<= v alfa) v)
+						(T (setq beta (min beta v)))
+					)
 				)
 			)
 			(return-from mini-val v)
@@ -88,8 +91,8 @@
 
 ;Selecciona el mejor tablero a jugar.
 (defun selec-accion (posibles-acciones utilidadMax)
-(print 'ya-casi)
-(print posibles-acciones)
+	(print 'ya-casi)
+	(print posibles-acciones)
 	(cond
 		((null posibles-acciones) (print 'error))
 		((= (cadr (car posibles-acciones)) utilidadMax) (car (last (car posibles-acciones))))
