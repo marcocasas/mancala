@@ -11,7 +11,7 @@
 
 (print d)
 ;Determina la profundidad de acuerdo a la dificultad elegida por el usuario.
-(cond 
+(cond
 	( (equal (car d) 'F) (setq profundidad 3) )
 	( (equal (car d) 'M) (setq profundidad 6) )
 	( (equal (car d) 'D) (setq profundidad 9) )
@@ -27,6 +27,6 @@
 		(t(setq res NIL))
 	)
 	(return-from verifica-corte res)
-) 
+)
 
 (print (verifica-corte '(0 0 0 0 0 1 24 0 0 0 0 0 1 24) 3))
