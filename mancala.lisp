@@ -1,6 +1,9 @@
 ;Formato de nodo para juego Mancala
 ;(nivel utilidad (11 12 13 14 15 16 P1 21 22 23 24 25 26 P2))
 
+;Hola. Checando.
+(print 'hola)
+
 ;Metodo para obtener la dificultad del juego seleccionada.
 (setq d '())
 (let ((in (open "dificultad.txt" :if-does-not-exist nil)))
