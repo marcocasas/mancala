@@ -1,5 +1,187 @@
-(setq profundidad 4)
+;Formato de nodo para juego Mancala
+;(nivel utilidad (11 12 13 14 15 16 P1 21 22 23 24 25 26 P2))
 
+;Hola. Checando.
+
+;Metodo para obtener la dificultad del juego seleccionada.
+(setq d '())
+(let ((in (open "dificultad.txt" :if-does-not-exist nil)))
+	(when in
+		(loop for line = (read-line in nil)
+			while line do (push (intern line) d)
+		)
+		(close in)
+	)
+)
+(cond
+	( (equal (car d) 'F) (setq profundidad 7) )
+	( (equal (car d) 'M) (setq profundidad 5) )
+	( (equal (car d) 'D) (setq profundidad 7) )
+	(t (setq profundidad 4))
+)
+
+;(setq nivel 2)
+
+(setq uno nil)
+(setq dos nil)
+(setq tres nil)
+(setq cuatro nil)
+(setq cinco nil)
+(setq seis nil)
+(setq posibilidades NIL)
+
+(defun alfa-beta (nodo)
+	(setq valorAccion (maxi-val nodo -9999 9999))
+	;(print 'valor-accion)
+	;(print valorAccion)
+	;;aqui meter cosa del mapcar y eso
+	(setq accion (selec-accion posibilidades valorAccion))
+	(return-from alfa-beta accion)
+)
+
+(defun maxi-val (estado alfa beta)
+	(cond
+		((eql T (verifica-corte (third estado) (first estado))) (setq v-maxi (utilidad estado)))
+		(T
+			(setq v-maxi -9999)
+			(setq acciones (acciones-disp estado))
+			(let ((tableros-disponibles acciones))
+				(loop
+					(when (eql tableros-disponibles NIL) (return v-maxi))
+					(setq accion (pop tableros-disponibles))
+					(let ((nodo (resultado accion (car estado))))
+						;(print 'copy-seq-nodo)
+						;(print (copy-seq nodo))
+						;(print v)
+						;(print 'mini-val)
+						;(print (mini-val (copy-seq nodo) alfa beta))
+						;(print 'alfa)
+						;(print alfa)
+						;(print 'cero)
+						;(print v-maxi)
+						(setq utilidad-nodo (mini-val (copy-seq nodo) alfa beta))
+						;(print 'utilidadNodoActual)
+						;(print utilidad-nodo)
+						(setq v-maxi (max v-maxi utilidad-nodo))
+						;(print 'max)
+						;(print (max v-maxi utilidad-nodo))
+						;(print 'uno)
+						;(print v-maxi)
+						;(print 'utilidad)
+						;(print v)
+						(rplaca (nthcdr 1 nodo) utilidad-nodo)
+						;(print 'dos)
+						;(print v-maxi)
+						;(print nodo)
+						;(print 'nodo-maxi-despues)
+						;(print nodo)
+						(if (= (car nodo) 1) (push nodo posibilidades))
+						(if (= (car nodo) 2) (push nodo dos))
+						(if (= (car nodo) 3) (push nodo tres))
+						(if (= (car nodo) 4) (push nodo cuatro))
+						(if (= (car nodo) 5) (push nodo cinco))
+						(if (= (car nodo) 6) (push nodo seis))
+					)
+					;(print 'posibilidades)
+					;(print posibilidades)
+					(cond
+						;((>= v beta) v)
+						((>= v-maxi beta) (setq tableros-disponibles NIL))
+						(T (setq alfa (max alfa v-maxi)))
+					)
+				)
+			)
+		)
+	)
+	;(print 'la-util-chida-q-doy)
+	;(print v)
+	(return-from maxi-val v-maxi)
+)
+
+(defun mini-val (estado alfa beta)
+	;(print 'entro-a-mini)
+	(cond
+		((eql T (verifica-corte (third estado) (first estado))) (setq v-mini (utilidad estado)))
+		(T
+			(setq v-mini 9999)
+			(setq acciones (acciones-disp (gira-estado estado)))
+			(let ((tableros-disponibles acciones))
+			;(print 'acciones-sipi)
+			;(print tableros-disponibles)
+				(loop
+					(when (eql tableros-disponibles NIL) (return v-mini))
+					(setq accion (gira-tablero (pop tableros-disponibles))) ;;
+					;(print accion)
+					(let ((nodo (resultado accion (car estado))))
+						(setq utilidad-nodo (maxi-val (copy-seq nodo) alfa beta))
+						(setq v-mini (min v-mini utilidad-nodo))
+						;(print 'accion-disponible)
+						;(print nodo)
+						;(print 'utilidad-asignada)
+						;(print v)
+						(rplaca (nthcdr 1 nodo) utilidad-nodo)
+						(if (= (car nodo) 1) (push nodo posibilidades))
+						;(print posibilidades)
+					)
+					(cond
+						;((<= v alfa) v)
+						((<= v-mini alfa) (setq tableros-disponibles nil))
+						(T (setq beta (min beta v-mini)))
+					)
+				)
+			)
+		)
+	)
+	;(print 'regreso)
+	;(print v)
+	(return-from mini-val v-mini)
+)
+
+;Selecciona el mejor tablero a jugar.
+(defun selec-accion (posibles-acciones utilidadMax)
+	;(print 'ya-casi)
+	;(print posibles-acciones)
+	;(print utilidadMax)
+	(cond
+		((null posibles-acciones) (print 'error))
+		((= (cadr (car posibles-acciones)) utilidadMax) (car (last (car posibles-acciones))))
+		(t (selec-accion (cdr posibles-acciones) utilidadMax))
+	)
+)
+
+(defun verifica-corte (tablero prof)
+	(cond
+		((> prof profundidad) (setq res T))
+		((or (> (seventh tablero) 24) (> (car (last tablero)) 24)) (setq res T))
+		((= (apply #'+ (nthcdr 8 (reverse tablero))) 0) (setq res T))
+		((= (- (apply #'+ (nthcdr 7 tablero)) (car (last tablero))) 0) (setq res T))
+		(t (setq res NIL))
+	)
+	(return-from verifica-corte res)
+)
+
+;Funcion para determinar la utilidad de cada estado.
+;"Completo"
+(defun utilidad (nodo)
+	(setq tablero (third nodo))
+	(cond
+		((eql (car d) 'F)
+			(setq respuesta (- (seventh tablero) (car (reverse tablero)))) ;utilidad cuando facil
+		)
+		((eql (car d) 'M)
+		  (setq respuesta (- (seventh tablero) (car (reverse tablero))))
+		)
+		((eql (car d) 'D)
+      (setq respuesta (+ (- (seventh tablero) (car (reverse tablero))) (turno-extra nodo))) ;REVISAR turno-extra, probarlo.
+		)
+		((> (seventh tablero) 24) (setq respuesta (+ respuesta 100)))
+		((> (car (last tablero)) 24) (setq respuesta (+ respuesta 100)))
+	)
+	(return-from utilidad respuesta)
+)
+
+;Funcion que nos dice que acciones estan disponibles.
+;"Completo"
 (defun acciones-disp (estado)
 	(setq acciones-disponibles NIL)
 	(setq tablero (third estado))
@@ -14,6 +196,8 @@
 	(return-from acciones-disp acciones-disponibles)
 )
 
+;Funcion generadora de un tablero dado un tablero actual y una posicion de movimiento
+;"Completo"
 (defun genera-nodo (indice estado)
 	(setq cant-piedras (car (nthcdr (- indice 1) estado)))
 	(setq cant-piedras-aux cant-piedras)
@@ -46,51 +230,7 @@
 	(return-from genera-nodo aux)
 )
 
-(defun verifica-corte (tablero prof)
-	(cond
-		((> prof profundidad) (setq res T))
-		((or (> (seventh tablero) 24) (> (car (last tablero)) 24)) (setq res T))
-		((= (apply #'+ (nthcdr 8 (reverse tablero))) 0) (setq res T))
-		((= (- (apply #'+ (nthcdr 7 tablero)) (car (last tablero))) 0) (setq res T))
-		(t (setq res NIL))
-	)
-	(return-from verifica-corte res)
-)
-
-(defun resultado (accion nivel)
-	(setq res (list (+ 1 nivel) 0 accion))
-	(return-from resultado res)
-)
-
-(defun gira-estado (nodo)
-	(setq tablero (third nodo))
-	(return-from gira-estado (append (list (first nodo) (second nodo) (append (nthcdr 7 tablero) (reverse (nthcdr 7 (reverse tablero)))))))
-)
-
-(defun gira-tablero (tablero)
-	(return-from gira-tablero (append (nthcdr 7 tablero) (reverse (nthcdr 7 (reverse tablero)))))
-)
-
-(setq d '(F))
-
-(defun utilidad (nodo)
-	(setq tablero (third nodo))
-	(cond
-		((eql (car d) 'F)
-			(setq respuesta (- (seventh tablero) (car (reverse tablero)))) ;utilidad cuando facil
-		)
-		((eql (car d) 'M)
-		  (setq respuesta (- (seventh tablero) (car (reverse tablero))))
-		)
-		((eql (car d) 'D)
-      (setq respuesta (+ (- (seventh tablero) (car (reverse tablero))) (turno-extra nodo)))
-		)
-		((> (seventh tablero) 24) (setq respuesta (+ respuesta 100)))
-		((> (car (last tablero)) 24) (setq respuesta (+ respuesta 100)))
-	)
-	(return-from utilidad respuesta)
-)
-
+;Metodo para saber cuantos turnos extra son posibles en un estado.
 (defun turno-extra (estado)
 	(setq i 0)
 	(setq resp 0)
@@ -102,28 +242,38 @@
 	(return-from turno-extra resp)
 )
 
-(print (utilidad '(2 0 (4 4 4 4 4 0 1 0 6 6 5 5 5 0))))
-;(print (utilidad '(1 0 (4 4 4 4 4 0 4 5 5 5 4 4 4 5))))
-;(print '(5 5 0 5 5 5 1 5 4 4 4 4 0 1))
-;(print (gira-tablero '(5 5 0 5 5 5 1 5 4 4 4 4 0 1)))
-;(setq nodo '(4 0 (6 6 5 4 0 1 2 6 6 5 4 0 1 2)))
-;(print (verifica-corte '(6 6 5 4 0 1 2 6 6 5 4 0 1 2) 4))
-;(print (verifica-corte (third nodo) (first nodo)))
-;(print (acciones-disp '(0 0 (4 4 4 4 4 4 0 4 4 4 4 4 4 0))))
-;(print (resultado '(4 4 4 4 4 0 1 5 5 5 4 4 4 0) (car '(0 0 (4 4 4 4 4 4 0 4 4 4 4 4 4 0)))))
-;(print (gira-estado '(2 0 (4 4 4 4 4 0 1 5 5 5 4 4 4 0))))
-;(print (acciones-disp (gira-estado '(2 0 (4 4 4 4 4 0 1 5 5 5 4 4 4 0)))))
-;(genera-nodo 5 '(2 0 4 0 11 0 9 1 0 0 5 2 10 4))
-;(acciones-disp '(1 2 1 10 (4 4 4 4 4 4 0 4 4 4 4 4 4 0)))
-;(print (acciones-disp '(1 2 1 10 (4 6 0 3 2 3 6 8 2 2 1 1 0 0))))
-;(setq lista NIL)
-;(print (genera-nodo 1 '(4 4 4 4 4 4 0 4 4 4 4 4 4 0)))
-;(print acciones-disponibles)
-; (print (genera-nodo 6 '(4 4 4 4 4 4 0 4 4 4 4 4 4 0)))
-; (print (genera-nodo 6 '(0 2 3 8 1 9 5 8 1 1 0 2 3 5)))
-; (print (genera-nodo 2 '(4 4 4 4 4 4 0 4 4 4 4 4 4 0)))
-; (print (genera-nodo 6 '(4 4 4 4 4 4 0 4 4 4 4 4 4 0)))
-; (print (genera-nodo 6 '(0 2 3 8 1 9 5 8 1 1 0 2 3 5)))
-; (print (genera-nodo 2 '(4 4 4 4 4 4 0 4 4 4 4 4 4 0)))
-; (print (genera-nodo 6 '(4 4 4 4 4 4 0 4 4 4 4 4 4 0)))
-; (print (genera-nodo 6 '(0 2 3 8 1 9 5 8 1 1 0 2 3 5)))
+;Funcion de generacion de nodos por cada movimiento.
+;"Completo"
+(defun resultado (accion nivel)
+	(setq res (list (+ 1 nivel) 0 accion))
+	(return-from resultado res)
+)
+
+;Funcion para girar el tablero y regresar un nodo cuando tire el oponente.
+;"Completo"
+(defun gira-estado (nodo)
+	(setq tablero (third nodo))
+	(return-from gira-estado (append (list (first nodo) (second nodo) (append (nthcdr 7 tablero) (reverse (nthcdr 7 (reverse tablero)))))))
+)
+
+;Funcion para girar el tablero cuando tire el oponente.
+;"Completo"
+(defun gira-tablero (tablero)
+	(return-from gira-tablero (append (nthcdr 7 tablero) (reverse (nthcdr 7 (reverse tablero)))))
+)
+;NOTAS
+;-Necesario que la funcion para evaluar estado terminar sea auxiliar para
+;conocer cuantos niveles bajar, segun la dificultad.
+
+;Pruebas
+;(trace maxi-val)
+;(trace mini-val)
+;(print (alfa-beta '(0 0 (1 6 6 5 5 4 0 4 4 4 4 4 0 1))))
+;(print (maxi-val '(0 0 (1 6 6 5 5 4 0 4 4 4 4 4 0 1)) -999 999))
+(print (alfa-beta '(0 0 (4 4 4 4 4 4 0 4 4 4 4 4 4 0))))
+;(print uno)
+;(print dos)
+;(print tres)
+;(print cuatro)
+;(print cinco)
+;(print seis)
