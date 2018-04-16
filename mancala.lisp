@@ -26,7 +26,10 @@
 	(setq valorAccion (maxi-val nodo -9999 9999))
 	;(print 'valor-accion)
 	;(print valorAccion)
-	;(apply 'max (mapcar #'second '((1 2 3) (9 8 7))))
+
+	;(setq la-mejor (apply 'max (mapcar #'second posibilidades)))
+	;(setq accion (selec-accion posibilidades la-mejor))
+
 	(setq accion (selec-accion posibilidades valorAccion))
 	(return-from alfa-beta accion)
 )
