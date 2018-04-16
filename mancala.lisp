@@ -20,11 +20,13 @@
 	(t (setq profundidad 4))
 )
 
+(setq posibilidades NIL)
+
 (defun alfa-beta (nodo)
 	(setq valorAccion (maxi-val nodo -9999 9999))
 	;(print 'valor-accion)
 	;(print valorAccion)
-	;;aqui meter cosa del mapcar y eso
+	;(apply 'max (mapcar #'second '((1 2 3) (9 8 7))))
 	(setq accion (selec-accion posibilidades valorAccion))
 	(return-from alfa-beta accion)
 )
