@@ -1,0 +1,12 @@
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\bin\Debug\interfazMancala.exe.config
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\bin\Debug\interfazMancala.exe
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\bin\Debug\interfazMancala.pdb
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\obj\Debug\interfazMancala.csprojResolveAssemblyReference.cache
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\obj\Debug\interfazMancala.Form1.resources
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\obj\Debug\interfazMancala.Properties.Resources.resources
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\obj\Debug\interfazMancala.csproj.GenerateResource.cache
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\obj\Debug\interfazMancala.csproj.CoreCompileInputs.cache
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\obj\Debug\interfazMancala.exe
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\obj\Debug\interfazMancala.pdb
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\obj\Debug\interfazMancala.Form2.resources
+C:\Users\Pablo\source\repos\interfazMancala\interfazMancala\obj\Debug\interfazMancala.Popup.resources
